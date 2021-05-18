@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+  <uri name="http://emmo.info/datamodel/0.0.1"               uri="datamodel.ttl"/>
+  <uri name="http://emmo.info/datamodel/0.0.1/entity-soft7"  uri="entity-soft7.ttl"/>
+  <uri name="http://emmo.info/datamodel/0.0.1/dlitemodel"    uri="dlitemodel.ttl"/>
+</catalog>
