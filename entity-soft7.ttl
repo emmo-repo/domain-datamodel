@@ -79,6 +79,15 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasDimensionValue"@en .
 
 
+###  http://emmo.info/datamodel#hasFirstShape
+:hasFirstShape rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :dataModelRelation ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :Property ;
+               rdfs:range :Shape ;
+               rdfs:label "hasFirstShape"@en .
+
+
 ###  http://emmo.info/datamodel#hasNextShape
 :hasNextShape rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :dataModelRelation ;
@@ -105,15 +114,6 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:domain :Object ;
                   rdfs:range :PropertyValue ;
                   <http://www.w3.org/2004/02/skos/core#prefLabel> "hasPropertyValue"@en .
-
-
-###  http://emmo.info/datamodel#hasShape
-:hasShape rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf :dataModelRelation ;
-          rdf:type owl:FunctionalProperty ;
-          rdfs:domain :Property ;
-          rdfs:range :Shape ;
-          rdfs:label "hasShape"@en .
 
 
 ###  http://emmo.info/datamodel#hasType
@@ -326,7 +326,7 @@ m/s"""@en ,
                             owl:onClass :Type
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasShape ;
+                            owl:onProperty :hasFirstShape ;
                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :Shape
                           ] ,

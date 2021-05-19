@@ -45,8 +45,12 @@ dcterms:title rdf:type owl:AnnotationProperty .
 :hasDimensionValue rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe .
 
 
+###  http://emmo.info/datamodel#hasFirstShape
+:hasFirstShape rdfs:subPropertyOf emmo:EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 .
+
+
 ###  http://emmo.info/datamodel#hasNextShape
-:hasNextShape rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe .
+:hasNextShape rdfs:subPropertyOf emmo:EMMO_8785be5a_2493_4b12_8f39_31907ab11748 .
 
 
 ###  http://emmo.info/datamodel#hasProperty
@@ -58,7 +62,8 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://emmo.info/datamodel#hasShape
-:hasShape rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe .
+:hasShape rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe .
 
 
 ###  http://emmo.info/datamodel#hasType
