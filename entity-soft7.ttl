@@ -217,6 +217,16 @@ m/s"""@en ,
                             "Refer to a valid unit symbol."@en .
 
 
+###  http://emmo.info/datamodel#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :PropertyValue ;
+          rdfs:range rdf:PlainLiteral ;
+          rdfs:comment """The actual literal value of a property of a data object. 
+
+This actual value is implementation dependent."""@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "hasValue"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -360,9 +370,13 @@ In addition have properties a label (unique within the scope of the entity) and 
                                  owl:onProperty :hasLabel ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasValue ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange rdf:PlainLiteral
                                ] ;
-               rdfs:comment "The value of a property of a data object."@en ,
-                            "The value of a property of a data object. Since the type system is kept open-ended there are no restriction on the actual value in this ontology. In an actual implementation there will be a restriction."@en ;
+               rdfs:comment "The value of a property of a data object. Since the type system is kept open-ended there are no restriction on the actual value in this ontology. In an actual implementation there will be a restriction."@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "PropertyValue"@en .
 
 
