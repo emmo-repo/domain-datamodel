@@ -6,10 +6,10 @@
 @prefix emmo: <http://emmo.info/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://emmo.info/datamodel/entity-soft7> .
+@base <http://emmo.info/datamodel/entity> .
 
-<http://emmo.info/datamodel/entity-soft7> rdf:type owl:Ontology ;
-                                           owl:versionIRI <http://emmo.info/datamodel/0.0.1/entity-soft7> ;
+<http://emmo.info/datamodel/entity> rdf:type owl:Ontology ;
+                                           owl:versionIRI <http://emmo.info/datamodel/0.0.1/entity> ;
                                            dcterms:creator "Jesper Friis, SINTEF"@en ,
                                                            "Thomas Hagelien, SINTEF"@en ;
                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
@@ -221,7 +221,7 @@ m/s"""@en ,
 :hasValue rdf:type owl:DatatypeProperty ;
           rdfs:domain :PropertyValue ;
           rdfs:range rdf:PlainLiteral ;
-          rdfs:comment """The actual literal value of a property of a data object. 
+          rdfs:comment """The actual literal value of a property of a data object.
 
 This actual value is implementation dependent."""@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "hasValue"@en .

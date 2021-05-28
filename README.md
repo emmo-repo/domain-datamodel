@@ -36,8 +36,8 @@ References
 
 Short description of the provided turtle files
 ----------------------------------------------
-- [entity-soft7.ttl](entity-soft7.ttl) defines the basic datamodel as a standalone turtle file.
-- [datamodel.ttl](datamodel.ttl) imports [entity-soft7.ttl](entity-soft7.ttl) and links it to EMMO.
+- [entity.ttl](entity.ttl) defines the basic datamodel as a standalone turtle file.
+- [datamodel.ttl](datamodel.ttl) imports [entity.ttl](entity.ttl) and links it to EMMO.
 - [dlitemodel.ttl](dlitemodel.ttl) imports [datamodel.ttl](datamodel.ttl) and adds a few specialisations that are specific to the dlite implementation, like that entities are actually subclasses of objects, etc.
 
 
