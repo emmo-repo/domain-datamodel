@@ -21,12 +21,8 @@
 
 ###  http://emmo.info/datamodel#Entity
 :Entity rdfs:subClassOf :Object ;
-        <http://www.w3.org/2004/02/skos/core#altLabel> "In DLite everything are instances (data objects). Metadata (entities) are instances of their meta-metadata. Hence, Entity is a subclass of Object."@en ,
-                                                       "Metadata"@en .
-
-
-###  http://emmo.info/datamodel#Object
-:Object <http://www.w3.org/2004/02/skos/core#altLabel> "Instance"@en .
+        rdfs:comment "In DLite everything are instances (data objects). Metadata (entities) are instances of their meta-metadata. Hence, Entity is a subclass of Object."@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Metadata"@en .
 
 
 ###  http://emmo.info/datamodel#Property
