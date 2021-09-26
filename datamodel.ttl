@@ -15,7 +15,9 @@
                               dcterms:creator "Jesper Friis, SINTEF"@en ,
                                               "Thomas Hagelien, SINTEF"@en ;
                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                              dcterms:title "Datamodel ontology"@en .
+                              dcterms:title "Datamodel ontology"@en ;
+                              dcterms:abstract "This module connects the SOFT7 data model described in entity.ttl with EMMO."@en .
+
 
 #################################################################
 #    Annotation properties

@@ -13,7 +13,9 @@
                                            dcterms:creator "Jesper Friis, SINTEF"@en ,
                                                            "Thomas Hagelien, SINTEF"@en ;
                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                           dcterms:title "SOFT7 datamodel ontology"@en .
+                                           dcterms:title "SOFT7 datamodel ontology"@en ;
+                                           dcterms:abstract "A simple standalone ontology describing the SOFT7 datamodel."@en .
+
 
 #################################################################
 #    Annotation properties
