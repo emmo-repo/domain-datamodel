@@ -9,13 +9,12 @@
 @base <http://emmo.info/datamodel/entity> .
 
 <http://emmo.info/datamodel/entity> rdf:type owl:Ontology ;
-                                           owl:versionIRI <http://emmo.info/datamodel/0.0.1/entity> ;
-                                           dcterms:creator "Jesper Friis, SINTEF"@en ,
-                                                           "Thomas Hagelien, SINTEF"@en ;
-                                           dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                           dcterms:title "SOFT7 datamodel ontology"@en ;
-                                           dcterms:abstract "A simple standalone ontology describing the SOFT7 datamodel."@en .
-
+                                     owl:versionIRI <http://emmo.info/datamodel/0.0.1/entity> ;
+                                     dcterms:abstract "A simple standalone ontology describing the SOFT7 datamodel."@en ;
+                                     dcterms:creator "Jesper Friis, SINTEF"@en ,
+                                                     "Thomas Hagelien, SINTEF"@en ;
+                                     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                     dcterms:title "SOFT7 datamodel ontology"@en .
 
 #################################################################
 #    Annotation properties
@@ -76,7 +75,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/datamodel#hasDimensionValue
 :hasDimensionValue rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :dataModelRelation ;
-                   rdfs:domain :Object ;
+                   rdfs:domain :Instance ;
                    rdfs:range :DimensionValue ;
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "hasDimensionValue"@en .
 
@@ -113,7 +112,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/datamodel#hasPropertyValue
 :hasPropertyValue rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :dataModelRelation ;
-                  rdfs:domain :Object ;
+                  rdfs:domain :Instance ;
                   rdfs:range :PropertyValue ;
                   <http://www.w3.org/2004/02/skos/core#prefLabel> "hasPropertyValue"@en .
 
@@ -177,7 +176,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/datamodel#hasMeta
 :hasMeta rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Object ;
+         rdfs:domain :Instance ;
          rdfs:range xsd:anyURI ;
          rdfs:comment "Unique URI to metadata, specified as namespace/version/name."@en ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "hasMeta"@en .
@@ -193,7 +192,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/datamodel#hasUUID
 :hasUUID rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Object ;
+         rdfs:domain :Instance ;
          rdfs:range xsd:string ;
          rdfs:comment "Refers to a unique UUID identifying an Object."@en ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "hasUUID"@en .
@@ -295,38 +294,39 @@ This actual value is implementation dependent."""@en ;
                           owl:onDataRange xsd:string
                         ] ;
         rdfs:comment "Metadata describing a data object."@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Metadata"@en ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity"@en .
 
 
-###  http://emmo.info/datamodel#Object
-:Object rdf:type owl:Class ;
-        rdfs:subClassOf :DataModel ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasDimensionValue ;
-                          owl:someValuesFrom :DimensionValue
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasPropertyValue ;
-                          owl:someValuesFrom :PropertyValue
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasMeta ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:anyURI
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasUUID ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:string
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasURI ;
-                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:anyURI
-                        ] ;
-        rdfs:comment "A data object, which is an instance of an Entity."@en ;
-        <http://www.w3.org/2004/02/skos/core#altLabel> "Instance"@en ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Object"@en .
+###  http://emmo.info/datamodel#Instance
+:Instance rdf:type owl:Class ;
+          rdfs:subClassOf :DataModel ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDimensionValue ;
+                            owl:someValuesFrom :DimensionValue
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPropertyValue ;
+                            owl:someValuesFrom :PropertyValue
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeta ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:anyURI
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasUUID ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasURI ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:anyURI
+                          ] ;
+          rdfs:comment "A data object, which is an instance of an Entity."@en ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "DataObject"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Instance"@en .
 
 
 ###  http://emmo.info/datamodel#Property
@@ -397,8 +397,7 @@ In addition have properties a label (unique within the scope of the entity) and 
                        ] ;
        rdfs:comment "An element in the list of of dimension in a property."@en ,
                     "ShapeElement would have been a better name."@en ;
-       rdfs:label "Shape"@en ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> ""@en .
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Shape"@en .
 
 
 ###  http://emmo.info/datamodel#Type
