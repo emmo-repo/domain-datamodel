@@ -12,16 +12,19 @@
                               owl:versionIRI <http://emmo.info/datamodel/0.0.1> ;
                               owl:imports <http://emmo.info/datamodel/0.0.1/entity> ,
                                           <https://emmo-repo.github.io/versions/1.0.0-beta/emmo-inferred-chemistry2.ttl> ;
+                              dcterms:abstract "This module connects the SOFT7 data model described in entity.ttl with EMMO."@en ;
                               dcterms:creator "Jesper Friis, SINTEF"@en ,
                                               "Thomas Hagelien, SINTEF"@en ;
                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                              dcterms:title "Datamodel ontology"@en ;
-                              dcterms:abstract "This module connects the SOFT7 data model described in entity.ttl with EMMO."@en .
-
+                              dcterms:title "Datamodel ontology"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/termsabstract
+dcterms:abstract rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/termscreator
 dcterms:creator rdf:type owl:AnnotationProperty .
@@ -38,6 +41,10 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://emmo.info/datamodel#dataModelRelation
+:dataModelRelation rdfs:subPropertyOf emmo:EMMO_6703954e_34c4_4a15_a9e7_f313760ae1a8 .
+
 
 ###  http://emmo.info/datamodel#hasDimension
 :hasDimension rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe .
