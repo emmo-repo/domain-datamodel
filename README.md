@@ -16,21 +16,72 @@ applications.
 
 Short description of the data model
 -----------------------------------
-The data model is shown in the figure below. The basic entity is
-called _Entity_, which can represent any self-contained piece of data.
-An Entity has an identity as well as a human description and a set of
-named _Dimensions_ and _Properties_.
+The taxonomy of the basic concepts in the datamodel ontology is shown in Figure 1.
+The
+- **DataModel** is the root of the datamodel ontology.
+- **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of data.
+- **DataInstance** is the class of individuals that stands for actual datasets.  An DataInstance is, as the name suggests, an instance of an Entity.
 
-A _Dimension_ simply has a label and a description.
+![Basic taxonomy](doc/figs/basic-taxonomy.svg)
 
-A _Property_ has a label, type, shape, unit and description.
-
-![The data model.](doc/datamodel.png)
+_Figure 1: Taxonomy of the basic concepts in the datamodel ontology._
 
 
-References
-----------
-1. A Practical Approach to Ontology-Based Data Modelling for Semantic Interoperability, https://www.scipedia.com/public/Hagelien_et_al_2021a
+### Entity
+An Entity represent any self-contained piece of data.  It is uniquely identified by its IRI.  In addition has it the following parts (composition):
+- **description**: a human description of the entity.
+- **dimensions**: zero or more named dimensions, which are referred to by the property shapes (see below).  A dimension has two parts:
+  - **label**: a label identifying the dimension within the entity.
+  - **description**: a human description of this dimension.
+- **properties**: a set or properties describing the underlying data.  A property has the following paths:
+  - **label**: a label identifying the property within the entity.
+  - **type**: the data type of the property. More specific types, like integer, float, string etc... are subclasses of Type.  Type may also be a reference to another entity.  They are implementation-specific and are not included in this ontology.
+  - **reference**:
+  - **shape**: The shape of the property.  It is a ordered list of DimensionExpressions.  For example `["N", "N+1"]` where "N" is a dimension label.  Actual implementations may leave the shape optional.
+  - **unit**: the unit of the property.  Would typically refer to other ontologies, like EMMO, QUDT or OM, or simply be a conventional symbol for the unit (e.g. "km/h").
+  - **description**: a human description of the property.
+
+Figure 2 shows the relations between the entity and its parts.
+
+
+![Relations between entity parts](doc/figs/entity.svg)
+
+_Figure 2: The relations the Entity parts.  The taxonomy is not shown for clarity._
+
+
+#### DataInstance
+In addition to a unique id (typically a UUID), data instances has the actual values of dimensions and properties as parts.  This is shown in Figure 3.
+
+![Instance](doc/figs/instance.svg)
+
+_Figure 3: The instance and its dimension and property value parts._
+
+
+#### Relations
+The basic entity ontology does not depend on EMMO, but still categorises its relations in terms of parthood (EMMO mereology and UML composition), connections (EMMO topology and UML aggregation) and associations (EMMO semiotics and UML association).  The relation taxonomy is shown in Figure 4.
+
+![Relations](doc/figs/relations.svg)
+
+_Figure 4: Relation taxonomy._
+
+
+Everything described so far is formally defined in the [entity.ttl](entity.ttl) turtle file.
+
+
+### DLite metadata hierarchy
+[DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic datamodel ontology.  Like in Python, where everything is an object, everything is an instance in DLite.  All metadata is for example an instance of its meta-metadata and is therefore an instance.  This is shown in Figure 5.  In addition dlite introduces different levels of metadata, where DataInstance is an instance of Entity, Entity is an instance of EntitySchema, EntitySchema is an instance of BasicEntitySchema and BasicEntitySchema is an instance of itself.
+
+![DLite metadata](doc/figs/metadata.svg)
+
+_Figure 5: The DLite metadata hierarchy._
+
+
+### Connection to EMMO
+When connecting to EMMO, the datamodel ontology is describing as a formal language. .  That instances and entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  Their parts are therefore constituents.  Data instances, shapes, dimension- and property values are subclasses of emmo:Data.  Unit is a emmo:ReferenceUnit, but may also refer to units in other ontologies.  This is shown in Figure 6.
+
+![Connection to EMMO](doc/figs/datamodel.svg)
+
+_Figure 6: Connection to EMMO._
 
 
 
@@ -39,6 +90,12 @@ Short description of the provided turtle files
 - [entity.ttl](entity.ttl) defines the basic datamodel as a standalone turtle file.
 - [datamodel.ttl](datamodel.ttl) imports [entity.ttl](entity.ttl) and links it to EMMO.
 - [dlitemodel.ttl](dlitemodel.ttl) imports [datamodel.ttl](datamodel.ttl) and adds a few specialisations that are specific to the dlite implementation, like that entities are actually subclasses of objects, etc.
+
+
+References
+----------
+1. A Practical Approach to Ontology-Based Data Modelling for Semantic Interoperability, https://www.scipedia.com/public/Hagelien_et_al_2021a
+
 
 
 Attributions and credits
