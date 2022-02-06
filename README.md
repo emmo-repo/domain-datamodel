@@ -36,7 +36,7 @@ An Entity represent any self-contained piece of data.  It is uniquely identified
 - **properties**: a set or properties describing the underlying data.  A property has the following paths:
   - **label**: a label identifying the property within the entity.
   - **type**: the data type of the property. More specific types, like integer, float, string etc... are subclasses of Type.  Type may also be a reference to another entity.  They are implementation-specific and are not included in this ontology.
-  - **reference**:
+  - **relation**: In case type refer to another entity, relation specifies how this and the other entity are related.
   - **shape**: The shape of the property.  It is a ordered list of DimensionExpressions.  For example `["N", "N+1"]` where "N" is a dimension label.  Actual implementations may leave the shape optional.
   - **unit**: the unit of the property.  Would typically refer to other ontologies, like EMMO, QUDT or OM, or simply be a conventional symbol for the unit (e.g. "km/h").
   - **description**: a human description of the property.
