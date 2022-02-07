@@ -18,10 +18,6 @@ Short description of the data model ontology
 --------------------------------------------
 The root concept in the taxonomy of this ontology is called **DataModel**.
 
-- **DataModel** is the root of the datamodel ontology.
--
-- **DataInstance** is the class of individuals that stands for actual datasets.  An DataInstance is, as the name suggests, an instance of an Entity.
-
 
 ### Entity
 The **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.  In addition has it the following parts (composition):
