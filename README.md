@@ -14,17 +14,18 @@ tools is needed in order to achieve actual interoperability in real
 applications.
 
 
-Short description of the data model
------------------------------------
-The taxonomy of the basic concepts in the datamodel ontology is shown in Figure 1.
-The
+Short description of the data model ontology
+--------------------------------------------
+The root concept in the taxonomy of this ontology is called **DataModel**.
+
 - **DataModel** is the root of the datamodel ontology.
-- **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of data.
+-
 - **DataInstance** is the class of individuals that stands for actual datasets.  An DataInstance is, as the name suggests, an instance of an Entity.
 
 
 ### Entity
-An Entity represent any self-contained piece of data.  It is uniquely identified by its IRI.  In addition has it the following parts (composition):
+The **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.  In addition has it the following parts (composition):
+- **identity**: identifies uniquely the entity.  Even though all ontological concepts are uniquely identified via their IRI, the identity is an explicit part of a data model and should therefore be included here.
 - **description**: a human description of the entity.
 - **dimensions**: zero or more named dimensions, which are referred to by the property shapes (see below).  A dimension has two parts:
   - **label**: a label identifying the dimension within the entity.
