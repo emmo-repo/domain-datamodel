@@ -42,39 +42,34 @@ Figure 1 shows the relations between the entity and its parts.
 _Figure 1: The relations the Entity parts.  The taxonomy is not shown for clarity._
 
 
-#### DataInstance
-In addition to a unique id (typically a UUID), data instances has the actual values of dimensions and properties as parts.  This is shown in Figure 2.
-
-![Instance](doc/figs/instance.svg)
-
-_Figure 2: The instance and its dimension and property value parts._
-
 
 #### Relations
-The basic entity ontology does not depend on EMMO, but still categorises its relations in terms of parthood (EMMO mereology and UML composition), connections (EMMO topology and UML aggregation) and associations (EMMO semiotics and UML association).  The relation taxonomy is shown in Figure 3.
+The basic entity ontology does not depend on EMMO, but still categorises its relations in terms of parthood (EMMO mereology and UML composition), connections (EMMO topology and UML aggregation) and associations (EMMO semiotics and UML association).  The relation taxonomy is shown in Figure 2.
 
 ![Relations](doc/figs/relations.svg)
 
-_Figure 3: Relation taxonomy._
+_Figure 2: Relation taxonomy._
 
 
 Everything described so far is formally defined in the [entity.ttl](entity.ttl) turtle file.
 
 
 ### DLite metadata hierarchy
-[DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic datamodel ontology.  Like in Python, where everything is an object, everything is an instance in DLite.  All metadata is for example an instance of its meta-metadata and is therefore an instance.  This is shown in Figure 4.  In addition dlite introduces different levels of metadata, where DataInstance is an instance of Entity, Entity is an instance of EntitySchema, EntitySchema is an instance of BasicEntitySchema and BasicEntitySchema is an instance of itself.
+[DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic datamodel ontology.  Like in Python, where everything is an object, everything is an instance in DLite.  All metadata is for example an instance of its meta-metadata and is therefore an instance.  This is shown in Figure 3.  In addition dlite introduces different levels of metadata, where DataInstance is an instance of Entity, Entity is an instance of EntitySchema, EntitySchema is an instance of BasicEntitySchema and BasicEntitySchema is an instance of itself.
+
+Note that this multi-level of abstractions cannot be described with first order logic, but requires second order logic.  In order to describe the DLite metadata hierearchy with description logic (which is a subset of first order logic), we introduce the `instanceOf` relations.  One should think about it as `rdf:type`, but without the constrain that the domain must be an individual.  Since `instanceOf` is not an OWL object property, it is not included in Figure 2 above.
 
 ![DLite metadata](doc/figs/metadata.svg)
 
-_Figure 4: The DLite metadata hierarchy._
+_Figure 3: The DLite metadata hierarchy._
 
 
 ### Connection to EMMO
-When connecting to EMMO, the datamodel ontology is describing as a formal language. .  That instances and entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  Their parts are therefore constituents.  Data instances, shapes, dimension- and property values are subclasses of emmo:Data.  Unit is a emmo:ReferenceUnit, but may also refer to units in other ontologies.  This is shown in Figure 5.
+When connecting to EMMO, the datamodel ontology is describing as a formal language. .  That instances and entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  Their parts are therefore constituents.  Data instances, shapes, dimension- and property values are subclasses of emmo:Data.  Unit is a emmo:ReferenceUnit, but may also refer to units in other ontologies.  This is shown in Figure 4.
 
 ![Connection to EMMO](doc/figs/datamodel.svg)
 
-_Figure 5: Connection to EMMO._
+_Figure 4: Connection to EMMO._
 
 
 
