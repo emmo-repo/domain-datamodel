@@ -28,10 +28,10 @@ The **Entity** is the most central concept in this ontology.  It is the class of
   - **description**: a human description of this dimension.
 - **properties**: a set or properties describing the underlying data.  A property has the following paths:
   - **label**: a label identifying the property within the entity.
-  - **type**: the data type of the property. More specific types, like integer, float, string etc... are subclasses of Type.  Type may also be a reference to another entity.  They are implementation-specific and are not included in this ontology.
+  - **type**: the data type of the property. More specific types, like integer, float, string etc... are subclasses of Type.  Type may also be a reference to another entity.  The actual type values are implementation-specific and are not included in this ontology.  In future releases type may be changed to a class.
   - **relation**: In case type refer to another entity, relation specifies how this and the other entity are related.
   - **shape**: The shape of the property.  It is a ordered list of DimensionExpressions.  For example `["N", "N+1"]` where "N" is a dimension label.  Actual implementations may leave the shape optional.
-  - **unit**: the unit of the property.  Would typically refer to other ontologies, like EMMO, QUDT or OM, or simply be a conventional symbol for the unit (e.g. "km/h").
+  - **unit**: the unit of the property.  Would typically refer to other ontologies, like EMMO, QUDT or OM, or simply be a conventional symbol for the unit (e.g. "km/h").  In future releases unit may be changed to a class.
   - **description**: a human description of the property.
 
 Figure 1 shows the relations between the entity and its parts.
@@ -61,7 +61,7 @@ _Figure 2: Taxonomy or object properties and data properties._
 [DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic entity ontology.  It extends the entity ontology with the following concepts:
 - **Metadata**, which is a generalisation of Entity that is able to describe not only data objects, but also entities and other metadata.
 - **Instance**, which is the class of all metadata instances, i.e. what can be described by a Metadata.
-- **DataInstance**, which is an instance representing actual data.  It is hence disjoint from metadata.
+- **DataInstance**, which is an instance representing actual data.  It is hence disjoint with metadata.
 - **EntitySchema** is a metadata that can describe an entity (i.e. a meta-metadata).
 - **BasicMetadataSchema** is a metadata that can describe an entity schema.  Furthermore it has the ability to describe itself, terminating the metadata hierarchy.
 

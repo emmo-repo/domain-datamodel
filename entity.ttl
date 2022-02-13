@@ -90,7 +90,11 @@ In EMMO this is a 'mereological'."""@en ,
 ###  http://emmo.info/datamodel#hasDimension
 :hasDimension rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :composition ;
-              rdfs:domain :Entity ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :DimensionExpression
+                                          :Entity
+                                        )
+                          ] ;
               rdfs:range :Dimension ;
               rdfs:comment "Relates an entity to one of its dimensions."@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "hasDimension"@en .
@@ -277,6 +281,10 @@ The syntax of the actual value is implementation dependent."""@en ;
 ###  http://emmo.info/datamodel#DimensionExpression
 :DimensionExpression rdf:type owl:Class ;
                      rdfs:subClassOf :DataModel ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasDimension ;
+                                       owl:someValuesFrom :Dimension
+                                     ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :hasNextDimensionExpression ;
                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
