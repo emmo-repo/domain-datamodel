@@ -77,7 +77,12 @@ _Figure 3: The extended metadata hierarchy._
 
 
 ### Connection to EMMO
-When connecting to EMMO, the datamodel ontology is describing as a formal language. .  That instances and entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  Their parts are therefore constituents.  Data instances, shapes, dimension- and property values are subclasses of emmo:Data.  Unit is a emmo:ReferenceUnit, but may also refer to units in other ontologies.  This is shown in Figure 4.
+When connecting to EMMO, the datamodel ontology is describing as a formal language.  That entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  The entity dimension, property, shape and dimension expression parts are therefore constituents.  Since shape has a finite set of (ordered) dimension expression direct parts, it is a state.  This is shown in Figure 4.
+
+The relations are not shown in Figure 4, but fits very well with EMMO:
+- composition -> emmo:hasOverlap (mereological)
+- connection -> emmo:isCausallyConnectedWith (topological)
+- relation -> emmo:semiotical
 
 ![Connection to EMMO](figs/emmo-connection.svg)
 

@@ -46,11 +46,11 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://emmo.info/datamodel#aggregation
-:aggregation rdfs:subPropertyOf emmo:EMMO_ad0e72fc_dcaa_490d_8371_b4d814dcda2c .
+:aggregation rdfs:subPropertyOf emmo:EMMO_6703954e_34c4_4a15_a9e7_f313760ae1a8 .
 
 
 ###  http://emmo.info/datamodel#composition
-:composition rdfs:subPropertyOf emmo:EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee .
+:composition rdfs:subPropertyOf emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 .
 
 
 ###  http://emmo.info/datamodel#dataModelRelation
