@@ -61,6 +61,7 @@ _Figure 2: Taxonomy or object properties and data properties._
 [DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic entity ontology.  It extends the entity ontology with the following concepts:
 - **Metadata**, which is a generalisation of Entity that is able to describe not only data objects, but also entities and other metadata.
 - **Instance**, which is the class of all metadata instances, i.e. what can be described by a Metadata.
+- **DataInstance**, which is an instance representing actual data.  It is hence disjoint from metadata.
 - **EntitySchema** is a metadata that can describe an entity (i.e. a meta-metadata).
 - **BasicMetadataSchema** is a metadata that can describe an entity schema.  Furthermore it has the ability to describe itself, terminating the metadata hierarchy.
 
