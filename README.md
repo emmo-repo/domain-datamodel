@@ -37,47 +37,58 @@ The **Entity** is the most central concept in this ontology.  It is the class of
 Figure 1 shows the relations between the entity and its parts.
 
 
-![Relations between entity parts](doc/figs/entity.svg)
+![Relations between entity parts](figs/entity.svg)
 
 _Figure 1: The relations the Entity parts.  The taxonomy is not shown for clarity._
 
 
 
 #### Relations
-The basic entity ontology does not depend on EMMO, but still categorises its relations in terms of parthood (EMMO mereology and UML composition), connections (EMMO topology and UML aggregation) and associations (EMMO semiotics and UML association).  The relation taxonomy is shown in Figure 2.
+The datamodel ontology categorises its relations in terms of:
+- **composition** which describe parthood relations.  It correspond to mereology in EMMO and composition in UML.
+- **connection** which describe connections between two concepts.  It correspond to topology in EMMO and the subproperty of UML aggregation that is not a composition.
+- **relation** which describe generic relations between concepts that are not connections or compositions.  It correspond to semiotical in EMMO.  In UML it is the subproperty of UML association that is not a aggregation.
 
-![Relations](doc/figs/relations.svg)
+As shown in Figure 2 is the same categorisation used for both object and data properties.
 
-_Figure 2: Relation taxonomy._
+![Relations](figs/relations.svg)
+
+_Figure 2: Taxonomy or object properties and data properties._
 
 
-Everything described so far is formally defined in the [entity.ttl](entity.ttl) turtle file.
 
+### Metadata model
+[DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic entity ontology.  It extends the entity ontology with the following concepts:
+- **Metadata**, which is a generalisation of Entity that is able to describe not only data objects, but also entities and other metadata.
+- **Instance**, which is the class of all metadata instances, i.e. what can be described by a Metadata.
+- **EntitySchema** is a metadata that can describe an entity (i.e. a meta-metadata).
+- **BasicMetadataSchema** is a metadata that can describe an entity schema.  Furthermore it has the ability to describe itself, terminating the metadata hierarchy.
 
-### DLite metadata hierarchy
-[DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic datamodel ontology.  Like in Python, where everything is an object, everything is an instance in DLite.  All metadata is for example an instance of its meta-metadata and is therefore an instance.  This is shown in Figure 3.  In addition dlite introduces different levels of metadata, where DataInstance is an instance of Entity, Entity is an instance of EntitySchema, EntitySchema is an instance of BasicEntitySchema and BasicEntitySchema is an instance of itself.
+Since metadata are instances of the meta-metadata that describes them, all metadata are also instances. This is similar to Python, where classes (Metadata) are a special kind (subclasses) of Python objects (Instance).
 
-Note that this multi-level of abstractions cannot be described with first order logic, but requires second order logic.  In order to describe the DLite metadata hierearchy with description logic (which is a subset of first order logic), we introduce the `instanceOf` relations.  One should think about it as `rdf:type`, but without the constrain that the domain must be an individual.  Since `instanceOf` is not an OWL object property, it is not included in Figure 2 above.
+The metadata model is shown in Figure 3.  Note that this multi-level of abstractions requires second order logic to describe.  It can therefore not be described formally in OWL description logic, which is based on first order logic.  Instead we introduce the the `instanceOf` relations as an annotation property.  It has the same semantic meaning as `rdf:type`, but without the constrain that the domain must be an individual.
 
-![DLite metadata](doc/figs/metadata.svg)
+OWL2 punning, which is to use the same IRI for both a class and individual, could have been another way to formalise the metadata hierarchy.  However, we would like to avoid that, since punning is not anchored in first order logic.
 
-_Figure 3: The DLite metadata hierarchy._
+![DLite metadata](figs/metadata.svg)
+
+_Figure 3: The extended metadata hierarchy._
 
 
 ### Connection to EMMO
 When connecting to EMMO, the datamodel ontology is describing as a formal language. .  That instances and entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  Their parts are therefore constituents.  Data instances, shapes, dimension- and property values are subclasses of emmo:Data.  Unit is a emmo:ReferenceUnit, but may also refer to units in other ontologies.  This is shown in Figure 4.
 
-![Connection to EMMO](doc/figs/datamodel.svg)
+![Connection to EMMO](figs/emmo-connection.svg)
 
 _Figure 4: Connection to EMMO._
 
 
 
-Short description of the provided turtle files
-----------------------------------------------
+The provided turtle files
+-------------------------
 - [entity.ttl](entity.ttl) defines the basic datamodel as a standalone turtle file.
-- [datamodel.ttl](datamodel.ttl) imports [entity.ttl](entity.ttl) and links it to EMMO.
-- [dlitemodel.ttl](dlitemodel.ttl) imports [datamodel.ttl](datamodel.ttl) and adds a few specialisations that are specific to the dlite implementation, like that entities are actually subclasses of objects, etc.
+- [metamodel.ttl](metamodel.ttl) imports [entity.ttl](entity.ttl) and extends it with the metadata model.
+- [datamodel.ttl](datamodel.ttl) imports [metamodel.ttl](metamodel.ttl) and links it to EMMO.
 
 
 References
