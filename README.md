@@ -67,7 +67,7 @@ _Figure 2: Taxonomy or object properties and data properties._
 
 Since metadata are instances of the meta-metadata that describes them, all metadata are also instances. This is similar to Python, where classes (Metadata) are a special kind (subclasses) of Python objects (Instance).
 
-The metadata model is shown in Figure 3.  Note that this multi-level of abstractions requires second order logic to describe.  It can therefore not be described formally in OWL description logic, which is based on first order logic.  Instead we introduce the the `instanceOf` relations as an annotation property.  It has the same semantic meaning as `rdf:type`, but without the constrain that the domain must be an individual.
+The metadata model is shown in Figure 3.  Note that this multi-level of abstractions requires second order logic to describe.  It can therefore not be described formally in OWL description logic, which is based on first order logic.  Instead we introduce the the `instanceOf` relations as an annotation property.  It is ignored by the reasoner, but should be thought of as having the same semantic meaning as `rdf:type` without the constrain that the domain must be an individual.
 
 OWL2 punning, which is to use the same IRI for both a class and individual, could have been another way to formalise the metadata hierarchy.  However, we would like to avoid that, since punning is not anchored in first order logic.
 
