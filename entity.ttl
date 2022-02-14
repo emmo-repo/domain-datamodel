@@ -155,6 +155,15 @@ In EMMO this may be interpreted as 'semiotical'."""@en ,
           <http://www.w3.org/2004/02/skos/core#prefLabel> "relation"@en .
 
 
+###  http://emmo.info/datamodel/entity#EMMO_23057c59_2137_40ab_84a4_748933a689df
+:EMMO_23057c59_2137_40ab_84a4_748933a689df rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :composition ;
+                                           rdfs:domain :Property ;
+                                           rdfs:range :Shape ;
+                                           rdfs:comment "The shape of a property. May be an empty shape."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "hasShape"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -333,6 +342,11 @@ The syntax of the actual value is implementation dependent."""@en ;
 :Property rdf:type owl:Class ;
           rdfs:subClassOf :DataModel ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :EMMO_23057c59_2137_40ab_84a4_748933a689df ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Shape
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty :hasDescription ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:string
@@ -361,7 +375,7 @@ In addition have properties a label (unique within the scope of the entity) and 
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFirstDimensionExpression ;
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass :Shape
+                         owl:onClass :DimensionExpression
                        ] ;
        rdfs:comment "An element in the list of of dimension in a property."@en ,
                     "ShapeElement would have been a better name."@en ;
