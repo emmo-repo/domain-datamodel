@@ -60,7 +60,9 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/datamodel#aggregation
 :aggregation rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :dataModelRelation ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :DataModel ;
+             rdfs:range :DataModel ;
              rdfs:comment "A connection between two entities."@en ,
                           """In UML this is is a subproperty of aggregation that is not a composition.
 
@@ -70,21 +72,15 @@ In EMMO this may be interpreted as 'topological'."""@en ;
 
 ###  http://emmo.info/datamodel#composition
 :composition rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :dataModelRelation ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :DataModel ;
+             rdfs:range :DataModel ;
              rdfs:comment """In UML this corresponds to UML composition.
 
 In EMMO this is a 'mereological'."""@en ,
                           "Relates a part to its whole."@en ;
              <http://www.w3.org/2004/02/skos/core#altLabel> "hasPart"@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "composition"@en .
-
-
-###  http://emmo.info/datamodel#dataModelRelation
-:dataModelRelation rdf:type owl:ObjectProperty ;
-                   rdfs:domain :DataModel ;
-                   rdfs:range :DataModel ;
-                   rdfs:comment "Super property for relations in the data model ontology."@en ;
-                   <http://www.w3.org/2004/02/skos/core#prefLabel> "dataModelRelation"@en .
 
 
 ###  http://emmo.info/datamodel#hasDimension
@@ -103,8 +99,8 @@ In EMMO this is a 'mereological'."""@en ,
 ###  http://emmo.info/datamodel#hasFirst
 :hasFirst rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :composition ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "Relates a whole with an ordered set of parts (elements) to its first element."@en ,
-                                                          "hasFirst"@en .
+          rdfs:comment "Relates a whole with an ordered set of parts (elements) to its first element."@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "hasFirst"@en .
 
 
 ###  http://emmo.info/datamodel#hasFirstDimensionExpression
@@ -133,7 +129,7 @@ In EMMO this is a 'mereological'."""@en ,
                             rdfs:domain :DimensionExpression ;
                             rdfs:range :DimensionExpression ;
                             rdfs:comment "Relates a dimension expression to the next dimension expression."@en ;
-                            rdfs:label "hasNextDimensionExpression"@en .
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "hasNextDimensionExpression"@en .
 
 
 ###  http://emmo.info/datamodel#hasProperty
@@ -147,7 +143,9 @@ In EMMO this is a 'mereological'."""@en ,
 
 ###  http://emmo.info/datamodel#relation
 :relation rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf :dataModelRelation ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :DataModel ;
+          rdfs:range :DataModel ;
           rdfs:comment """In UML this is is a subproperty of association that is not an aggregation.
 
 In EMMO this may be interpreted as 'semiotical'."""@en ,
@@ -203,7 +201,7 @@ In EMMO this may be interpreted as 'semiotical'."""@en ;
           rdfs:range xsd:string ;
           rdfs:comment "Range is defined as xsd:string, even though xsd:NCName would have been more precise, but that is not supported by the FaCT++ reasoner."@en ,
                        "Refer to a unique and valid C identifier."@en ;
-          rdfs:label "hasLabel"@en .
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "hasLabel"@en .
 
 
 ###  http://emmo.info/datamodel#hasRelation
@@ -257,8 +255,8 @@ The syntax of the actual value is implementation dependent."""@en ;
 
 ###  http://emmo.info/datamodel#DataModel
 :DataModel rdf:type owl:Class ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "A superclass for all classes in the data model ontology."@en ,
-                                                           "DataModel"@en .
+           rdfs:comment "A superclass for all classes in the data model ontology."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "DataModel"@en .
 
 
 ###  http://emmo.info/datamodel#Dimension
@@ -275,7 +273,7 @@ The syntax of the actual value is implementation dependent."""@en ;
                              owl:onDataRange xsd:string
                            ] ;
            rdfs:comment "A dimension of an Entity. Dimensions have a label, which i unique within the scope of the Entity and a human description."@en ;
-           rdfs:label "Dimension"@en .
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Dimension"@en .
 
 
 ###  http://emmo.info/datamodel#DimensionExpression
@@ -352,7 +350,7 @@ The syntax of the actual value is implementation dependent."""@en ;
   - shape
   - unit
 In addition have properties a label (unique within the scope of the entity) and a human description."""@en ;
-          rdfs:label "Property"@en .
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Property"@en .
 
 
 ###  http://emmo.info/datamodel#Shape

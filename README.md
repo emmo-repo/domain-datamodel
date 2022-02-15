@@ -57,8 +57,8 @@ _Figure 2: Taxonomy or object properties and data properties._
 
 
 
-### Metadata model
-[DLite](https://github.com/SINTEF) introduces a metadata hierarchy, which is not part of the basic entity ontology.  It extends the entity ontology with the following concepts:
+### Metamodel
+A metamodel for the metadata hierarchy, which is not part of the basic entity ontology was suggested in SOFT and implemented in [DLite](https://github.com/SINTEF).  It extends the entity ontology with the following concepts:
 - **Metadata**, which is a generalisation of Entity that is able to describe not only data objects, but also entities and other metadata.
 - **DataInstance**, which is an instance on an entity representing actual data.
 - **Instance**, which is the class of all metadata instances, i.e. what can be described by a Metadata.  It is the disjoint union of Metadata and DataInstance.

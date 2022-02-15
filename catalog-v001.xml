@@ -21,6 +21,7 @@
     <uri name="http://emmo.info/emmo/1.0.0-beta3/middle/symbolic"        uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta3/middle/symbolic.ttl"/>
     <uri name="http://emmo.info/emmo/1.0.0-beta3/middle/semiotics"       uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta3/middle/semiotics.ttl"/>
     <uri name="http://emmo.info/emmo/1.0.0-beta3/middle/properties"      uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta3/middle/properties.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta3/middle/data"            uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta3/middle/data.ttl"/>
 
     <uri name="http://emmo.info/emmo/1.0.0-beta3/domain/manufacturing"   uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta3/domain/manufacturing.ttl"/>
     <uri name="http://emmo.info/emmo/1.0.0-beta3/domain/materials"       uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta3/domain/materials.ttl"/>
