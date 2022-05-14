@@ -58,6 +58,15 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://emmo.info/datamodel#EMMO_23057c59_2137_40ab_84a4_748933a689df
+:EMMO_23057c59_2137_40ab_84a4_748933a689df rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf :composition ;
+                                           rdfs:domain :Property ;
+                                           rdfs:range :Shape ;
+                                           rdfs:comment "The shape of a property. May be an empty shape."@en ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "hasShape"@en .
+
+
 ###  http://emmo.info/datamodel#aggregation
 :aggregation rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
@@ -151,15 +160,6 @@ In EMMO this is a 'mereological'."""@en ,
 In EMMO this may be interpreted as 'semiotical'."""@en ,
                        "Note that this object property is not in the datamodel ontology, but may be used as a value of the 'hasRelation' data property of 'Property'."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "relation"@en .
-
-
-###  http://emmo.info/datamodel/entity#EMMO_23057c59_2137_40ab_84a4_748933a689df
-:EMMO_23057c59_2137_40ab_84a4_748933a689df rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf :composition ;
-                                           rdfs:domain :Property ;
-                                           rdfs:range :Shape ;
-                                           rdfs:comment "The shape of a property. May be an empty shape."@en ;
-                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "hasShape"@en .
 
 
 #################################################################
@@ -294,8 +294,7 @@ The syntax of the actual value is implementation dependent."""@en ;
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :hasNextDimensionExpression ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onClass :DimensionExpression
+                                       owl:allValuesFrom :DimensionExpression
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :hasValue ;
@@ -341,8 +340,7 @@ The syntax of the actual value is implementation dependent."""@en ;
           rdfs:subClassOf :DataModel ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :EMMO_23057c59_2137_40ab_84a4_748933a689df ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :Shape
+                            owl:allValuesFrom :Shape
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasDescription ;
