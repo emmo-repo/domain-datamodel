@@ -29,17 +29,17 @@
     <uri name="http://emmo.info/emmo/1.0.0-beta4/multiperspective/symbolic"      uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/multiperspective/symbolic.ttl"/>
 
     <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines"                    uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/chemistry"          uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/chemistry.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/computerscience"    uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/computerscience.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/isq"                uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/isq.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/manufacturing"      uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/manufacturing.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/materials"          uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/materials.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/math"               uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/math.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/metrology"          uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/metrology.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/models"             uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/models.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/periodictable"      uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/periodictable.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/siunits"            uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/siunits.ttl"/>
-    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/unitsextension"     uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/disciplines/unitsextension.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/chemistry"          uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/chemistry.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/computerscience"    uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/computerscience.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/isq"                uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/isq.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/manufacturing"      uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/manufacturing.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/materials"          uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/materials.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/math"               uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/math.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/metrology"          uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/metrology.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/models"             uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/models.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/periodictable"      uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/periodictable.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/siunits"            uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/siunits.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/unitsextension"     uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/unitsextension.ttl"/>
 
   </group>
 </catalog>

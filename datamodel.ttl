@@ -11,10 +11,10 @@
 <http://emmo.info/datamodel> rdf:type owl:Ontology ;
                               owl:versionIRI <http://emmo.info/datamodel/0.0.2> ;
                               owl:imports <http://emmo.info/datamodel/0.0.2/metamodel> ,
-                                          <http://emmo.info/emmo/1.0.0-beta3/domain/math> ,
-                                          <http://emmo.info/emmo/1.0.0-beta3/middle/data> ,
-                                          <http://emmo.info/emmo/1.0.0-beta3/middle/persholistic> ,
-                                          <http://emmo.info/emmo/1.0.0-beta3/middle/symbolic> ;
+                                          <http://emmo.info/emmo/1.0.0-beta4/perspectives/data> ,
+                                          <http://emmo.info/emmo/1.0.0-beta4/multiperspective/persholistic> ,
+                                          <http://emmo.info/emmo/1.0.0-beta4/multiperspective/symbolic> ,
+                                          <http://emmo.info/emmo/1.0.0-beta4/disciplines/math> ;
                               dcterms:abstract "This module connects the SOFT7 data model and the metamodel described in entity.ttl and metamodel.ttl, respectively, to EMMO."@en ;
                               dcterms:creator "Jesper Friis, SINTEF"@en ,
                                               "Thomas Hagelien, SINTEF"@en ;
