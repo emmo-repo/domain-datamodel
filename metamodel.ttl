@@ -24,7 +24,7 @@
 ###  http://emmo.info/datamodel#instanceOf
 :instanceOf rdf:type owl:AnnotationProperty ;
             rdfs:comment "Relates an instance to the class that describes it."@en ,
-                         """The semantic meaning of 'instanceOf' is the same as 'rdf:type'. 
+                         """The semantic meaning of 'instanceOf' is the same as 'rdf:type'.
 
 But since first order logic, of which OWL descriptive logic is based on, we introduce 'instanceOf' as an annotation property."""@en ;
             rdfs:isDefinedBy <rdf:type> ;
@@ -131,16 +131,10 @@ dcterms:title rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/datamodel#DataInstance
 :DataInstance rdf:type owl:Class ;
               :instanceOf :Entity ;
-              rdfs:comment """An instance representing actual data. 
+              rdfs:comment """An instance representing actual data.
 
 It is hence disjoint from Metadata."""@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "DataInstance"@en .
-
-
-###  http://emmo.info/datamodel#DataModel
-:DataModel rdf:type owl:Class ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "A superclass for all classes in the data model ontology."@en ,
-                                                           "DataModel"@en .
 
 
 ###  http://emmo.info/datamodel#DimensionValue
