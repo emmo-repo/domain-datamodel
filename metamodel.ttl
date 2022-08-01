@@ -10,7 +10,7 @@
 
 <http://emmo.info/datamodel/metamodel> rdf:type owl:Ontology ;
                                         owl:versionIRI <http://emmo.info/datamodel/0.0.2/metamodel> ;
-                                        owl:imports <http://emmo.info/datamodel/0.0.2/entity> ;
+                                        owl:imports <https://raw.githubusercontent.com/emmo-repo/datamodel-ontology/master/entiry.ttl> ;
                                         dcterms:abstract "A metamodel extension of the simple SOFT7 datamodel for entities."@en ;
                                         dcterms:creator "Jesper Friis, SINTEF"@en ,
                                                         "Thomas Hagelien, SINTEF"@en ;
