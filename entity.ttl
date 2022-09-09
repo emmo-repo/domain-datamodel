@@ -192,17 +192,6 @@ In EMMO this may be interpreted as 'semiotical'."""@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "hasDescription"@en .
 
 
-###  http://emmo.info/datamodel#hasIdentity
-:hasIdentity rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf :dataComposition ;
-             rdf:type owl:FunctionalProperty ;
-             rdfs:domain :DataModel ;
-             rdfs:range xsd:anyURI ;
-             rdfs:comment "Unique identity of an entity. This will typically be its IRI."@en ;
-             <http://www.w3.org/2004/02/skos/core#altLabel> "hasURI"@en ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "hasIdentity"@en .
-
-
 ###  http://emmo.info/datamodel#hasLabel
 :hasLabel rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf :dataComposition ;
@@ -324,13 +313,10 @@ The syntax of the actual value is implementation dependent."""@en ;
                           owl:onProperty :hasDescription ;
                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           owl:onDataRange xsd:string
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasIdentity ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:anyURI
                         ] ;
-        rdfs:comment "Metadata describing a data object."@en ;
+        rdfs:comment """Metadata describing a data object.
+
+An entity is uniquely identified by its IRI."""@en ;
         <http://www.w3.org/2004/02/skos/core#altLabel> "Metadata"@en ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity"@en .
 
