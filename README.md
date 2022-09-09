@@ -94,7 +94,9 @@ The provided turtle files
 -------------------------
 - [entity.ttl](entity.ttl) defines the basic datamodel as a standalone turtle file.
 - [metamodel.ttl](metamodel.ttl) imports [entity.ttl](entity.ttl) and extends it with the metadata model.
-- [datamodel.ttl](datamodel.ttl) imports [metamodel.ttl](metamodel.ttl) and links it to EMMO.
+- [transaction.ttl](transaction.ttl) imports [metamodel.ttl](metamodel.ttl) and extends it with the concept of transactions.  A transaction is an instance that has an immutable parent instance.  This allows for time series and strict provenance.
+- [collection.ttl](collection.ttl) import [transaction.ttl](transaction.ttl) and extends it with the concept of collections.  A collection is a special type of instance that contains references to a set of other instances and relations between them.  Collections make it possible to describe complex data structures and can be seen as a local knowledge base.
+- [datamodel.ttl](datamodel.ttl) imports [collection.ttl](collection.ttl) and links it to EMMO.
 
 
 References
@@ -123,8 +125,8 @@ Attributions and credits
 
 ### Contributors and contacts
 
-- Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
 - Jesper Friis (jesper.friis(at)sintef.no)
+- Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
 
 
 
