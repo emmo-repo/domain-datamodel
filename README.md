@@ -125,8 +125,8 @@ Attributions and credits
 
 ### Contributors and contacts
 
-- Jesper Friis (jesper.friis(at)sintef.no)
 - Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
+- Jesper Friis (jesper.friis(at)sintef.no)
 
 
 
