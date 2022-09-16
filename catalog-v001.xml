@@ -2,10 +2,12 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
 
-    <uri name="http://emmo.info/datamodel/0.0.2"                                 uri="https://raw.githubusercontent.com/emmo-repo/datamodel-ontology/master/datamodel.ttl"/>
-    <uri name="http://emmo.info/datamodel/0.0.2/datamodel"                       uri="https://raw.githubusercontent.com/emmo-repo/datamodel-ontology/master/datamodel.ttl"/>
-    <uri name="http://emmo.info/datamodel/0.0.2/entity"                          uri="https://raw.githubusercontent.com/emmo-repo/datamodel-ontology/master/entity.ttl"/>
-    <uri name="http://emmo.info/datamodel/0.0.2/metamodel"                       uri="https://raw.githubusercontent.com/emmo-repo/datamodel-ontology/master/metamodel.ttl"/>
+    <uri name="http://emmo.info/datamodel/0.0.2"                                 uri="datamodel.ttl"/>
+    <uri name="http://emmo.info/datamodel/0.0.2/datamodel"                       uri="datamodel.ttl"/>
+    <uri name="http://emmo.info/datamodel/0.0.2/collection"                      uri="collection.ttl"/>
+    <uri name="http://emmo.info/datamodel/0.0.2/transaction"                     uri="transaction.ttl"/>
+    <uri name="http://emmo.info/datamodel/0.0.2/metamodel"                       uri="metamodel.ttl"/>
+    <uri name="http://emmo.info/datamodel/0.0.2/entity"                          uri="entity.ttl"/>
 
     <uri name="http://emmo.info/emmo/1.0.0-beta4"                                uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/emmo.ttl"/>
     <uri name="http://emmo.info/emmo/1.0.0-beta4/emmo-tlo"                       uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/emmo-tlo.ttl"/>
