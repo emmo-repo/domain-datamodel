@@ -24,7 +24,7 @@
 ###  http://emmo.info/datamodel#Collection
 :Collection rdf:type owl:Class ;
             rdfs:subClassOf :Instance ;
-            rdfs:comment """A collection is a special type of instance that contain a set of (references to) other nstances and relations between these instance.
+            rdfs:comment """A collection is a special type of instance that contains a set of (references to) other instances and relations between these instances.
 
 In the SOFT and DLite are collections implemented as an instance with a list of relations (rdf subject-predicate-object triples) as its only property. The member instances are referred to with a label that is local to the collection."""@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "Collection"@en .
