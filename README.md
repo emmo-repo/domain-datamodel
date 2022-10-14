@@ -127,6 +127,7 @@ Attributions and credits
 
 - Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
 - Jesper Friis (jesper.friis(at)sintef.no)
+- Francesca Lønstad Bleken (francesca.l.bleken(at)sintef.no)
 
 
 
