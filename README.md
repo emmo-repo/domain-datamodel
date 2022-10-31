@@ -37,7 +37,7 @@ The **Entity** is the most central concept in this ontology.  It is the class of
 Figure 1 shows the relations between the entity and its parts.
 
 
-![Relations between entity parts](figs/entity.svg)
+![Relations between entity parts](docs/figs/entity.svg)
 
 _Figure 1: The relations the Entity parts.  The taxonomy is not shown for clarity._
 
@@ -51,7 +51,7 @@ The datamodel ontology categorises its relations in terms of:
 
 As shown in Figure 2 is the same categorisation used for both object and data properties.
 
-![Relations](figs/relations.svg)
+![Relations](docs/figs/relations.svg)
 
 _Figure 2: Taxonomy or object properties and data properties._
 
@@ -71,7 +71,7 @@ The metadata model is shown in Figure 3.  Note that this multi-level of abstract
 
 OWL2 punning, which is to use the same IRI for both a class and individual, could have been another way to formalise the metadata hierarchy.  However, we would like to avoid that, since punning is not anchored in first order logic.
 
-![DLite metadata](figs/metadata.svg)
+![DLite metadata](docs/figs/metadata.svg)
 
 _Figure 3: The extended metadata hierarchy._
 
@@ -84,7 +84,7 @@ The relations are not shown in Figure 4, but fits very well with EMMO:
 - connection -> emmo:isCausallyConnectedWith (topological)
 - relation -> emmo:semiotical
 
-![Connection to EMMO](figs/emmo-connection.svg)
+![Connection to EMMO](docs/figs/emmo-connection.svg)
 
 _Figure 4: Connection to EMMO._
 
