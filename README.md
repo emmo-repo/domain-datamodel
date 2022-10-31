@@ -1,5 +1,25 @@
-Datamodel ontology
+Datamodel Ontology
 ==================
+
+Content
+-------
+- [Overview](#overview)
+- [Short description of the data model ontology](#short-description-of-the-data-model-ontology)
+  - [Entity](#entity)
+  - [Relations](#relations)
+  - [Metamodel](#metamodel)
+  - [Connection to EMMO](#connection-to-emmo)
+- [The provided turtle files](#the-provided-turtle-files)
+- [Usage example](#usage-example)
+- [References](#references)
+- [Attributions and credits](#attributions-and-credits)
+  - [Contributing projects](#contributing-projects)
+  - [Contributors and contacts](#contributors-and-contacts)
+- [License](#license)
+
+
+Overview
+--------
 An ontological description of a simple data model aimed to make
 application specific data semantic interoperabel.
 
@@ -43,7 +63,7 @@ _Figure 1: The relations the Entity parts.  The taxonomy is not shown for clarit
 
 
 
-#### Relations
+### Relations
 The datamodel ontology categorises its relations in terms of:
 - **composition** which describe parthood relations.  It correspond to mereology in EMMO and composition in UML.
 - **connection** which describe connections between two concepts.  It correspond to topology in EMMO and the subproperty of UML aggregation that is not a composition.
@@ -99,6 +119,11 @@ The provided turtle files
 - [datamodel.ttl](datamodel.ttl) imports [collection.ttl](collection.ttl) and links it to EMMO.
 
 
+Usage example
+-------------
+See [docs/serialisation.md](docs/serialisation.md) for an example of how entities and instances can be serialised with the Datamodel Ontology.
+
+
 References
 ----------
 1. A Practical Approach to Ontology-Based Data Modelling for Semantic Interoperability, https://www.scipedia.com/public/Hagelien_et_al_2021a
@@ -108,7 +133,7 @@ References
 Attributions and credits
 ------------------------
 
-### Contribruting projects
+### Contributing projects
 
 - [MarketPlace](https://www.the-marketplace-project.eu/);
   Grant Agreement No: 760173
@@ -122,11 +147,11 @@ Attributions and credits
   Grant Agreement No: 952903
 
 
-
 ### Contributors and contacts
 
-- Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
 - Jesper Friis (jesper.friis(at)sintef.no)
+- Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
+- Francesca Lønstad Bleken
 
 
 
