@@ -73,7 +73,7 @@ As shown in Figure 2 is the same categorisation used for both object and data pr
 
 ![Relations](docs/figs/relations.svg)
 
-_Figure 2: Taxonomy or object properties and data properties._
+_Figure 2: Taxonomy of object properties and data properties._
 
 
 
