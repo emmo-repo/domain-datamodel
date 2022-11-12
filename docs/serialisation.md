@@ -119,8 +119,7 @@ Lets now consider an instance of a person that in json would look like
 ```
 
 Figure 2 show how this instance may look like serialised as RDF, where
-the instances A, ..., E refer to the same individuals as in the
-figure above.
+the individuals A, ..., E refer to the same individuals as in Figure 1.
 
 ![fig2](figs/person-instance.svg)
 
