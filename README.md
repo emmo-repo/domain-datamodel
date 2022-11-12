@@ -40,8 +40,8 @@ The root concept in the taxonomy of this ontology is called **DataModel**.
 
 
 ### Entity
-The **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.  In addition has it the following parts (composition):
-- **identity**: identifies uniquely the entity.  Even though all ontological concepts are uniquely identified via their IRI, the identity is an explicit part of a data model and should therefore be included here.
+The **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.
+It id uniquely defined by its IRI. In addition it has the following parts (composition):
 - **description**: a human description of the entity.
 - **dimensions**: zero or more named dimensions, which are referred to by the property shapes (see below).  A dimension has two parts:
   - **label**: a label identifying the dimension within the entity.
@@ -149,9 +149,9 @@ Attributions and credits
 
 ### Contributors and contacts
 
-- Jesper Friis (jesper.friis(at)sintef.no)
-- Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
-- Francesca Lønstad Bleken
+- Jesper Friis, SINTEF
+- Francesca Lønstad Bleken, SINTEF
+- Thomas Hagelien, SINTEF
 
 
 
