@@ -35,11 +35,11 @@ would look like:
 }
 ```
 
-Figure 1 shows how it would look like serialised in RDF.
+Figure 1 shows how it would look like serialised in RDF,
 
 ![fig1](figs/person-entity.svg)
 
-where the individuals labeled `A`, ..., `E` are shorthands for the
+where the individuals labeled A, ..., E are shorthands for the
 following IRIs:
 
 | shorthand | IRI |
