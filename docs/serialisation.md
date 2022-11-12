@@ -119,7 +119,7 @@ Lets now consider an instance of a person that in json would look like
 ```
 
 Figure 2 show how this instance may look like serialised as RDF, where
-the instances `A`, ..., `E` refer to the same instances as in the
+the instances A, ..., E refer to the same individuals as in the
 figure above.
 
 ![fig2](figs/person-instance.svg)
@@ -150,5 +150,10 @@ Serialised in turtle this instance would be
     dm:hasValue "34.0"^^xsd:float .
 
 :skills1 rdf:type dm:PropertyValue ;
-    dm:hasValue ( "observing"@en "chemistry"@en "violin"@en "boxing"@en ) .
+    dm:hasValue (
+        "observing"^^xsd:string
+        "chemistry"^^xsd:string
+        "violin"^^xsd:string
+        "boxing"^^xsd:string
+    ) .
 ```
