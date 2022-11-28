@@ -143,7 +143,7 @@ Serialised in turtle this instance would be
     dm:hasValue "4"^^xsd:integer .
 
 :name1 rdf:type dm:PropertyValue ;
-    dm:hasValue "Shelock Homes"^^xsd:string .
+    dm:hasValue "Sherlock Holmes"^^xsd:string .
 
 :age1 rdf:type dm:PropertyValue ;
     dm:hasValue "34.0"^^xsd:float .
