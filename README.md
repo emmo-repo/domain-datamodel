@@ -1,5 +1,25 @@
-Datamodel ontology
+Datamodel Ontology
 ==================
+
+Content
+-------
+- [Overview](#overview)
+- [Short description of the data model ontology](#short-description-of-the-data-model-ontology)
+  - [Entity](#entity)
+  - [Relations](#relations)
+  - [Metamodel](#metamodel)
+  - [Connection to EMMO](#connection-to-emmo)
+- [The provided turtle files](#the-provided-turtle-files)
+- [Usage example](#usage-example)
+- [References](#references)
+- [Attributions and credits](#attributions-and-credits)
+  - [Contributing projects](#contributing-projects)
+  - [Contributors and contacts](#contributors-and-contacts)
+- [License](#license)
+
+
+Overview
+--------
 An ontological description of a simple data model aimed to make
 application specific data semantic interoperabel.
 
@@ -20,7 +40,7 @@ The root concept in the taxonomy of this ontology is called **DataModel**.
 
 
 ### Entity
-The **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.  
+The **Entity** is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.
 It id uniquely defined by its IRI. In addition it has the following parts (composition):
 - **description**: a human description of the entity.
 - **dimensions**: zero or more named dimensions, which are referred to by the property shapes (see below).  A dimension has two parts:
@@ -37,13 +57,13 @@ It id uniquely defined by its IRI. In addition it has the following parts (compo
 Figure 1 shows the relations between the entity and its parts.
 
 
-![Relations between entity parts](figs/entity.svg)
+![Relations between entity parts](docs/figs/entity.svg)
 
 _Figure 1: The relations the Entity parts.  The taxonomy is not shown for clarity._
 
 
 
-#### Relations
+### Relations
 The datamodel ontology categorises its relations in terms of:
 - **composition** which describe parthood relations.  It correspond to mereology in EMMO and composition in UML.
 - **connection** which describe connections between two concepts.  It correspond to topology in EMMO and the subproperty of UML aggregation that is not a composition.
@@ -51,9 +71,9 @@ The datamodel ontology categorises its relations in terms of:
 
 As shown in Figure 2 is the same categorisation used for both object and data properties.
 
-![Relations](figs/relations.svg)
+![Relations](docs/figs/relations.svg)
 
-_Figure 2: Taxonomy or object properties and data properties._
+_Figure 2: Taxonomy of object properties and data properties._
 
 
 
@@ -71,7 +91,7 @@ The metadata model is shown in Figure 3.  Note that this multi-level of abstract
 
 OWL2 punning, which is to use the same IRI for both a class and individual, could have been another way to formalise the metadata hierarchy.  However, we would like to avoid that, since punning is not anchored in first order logic.
 
-![DLite metadata](figs/metadata.svg)
+![DLite metadata](docs/figs/metadata.svg)
 
 _Figure 3: The extended metadata hierarchy._
 
@@ -84,7 +104,7 @@ The relations are not shown in Figure 4, but fits very well with EMMO:
 - connection -> emmo:isCausallyConnectedWith (topological)
 - relation -> emmo:semiotical
 
-![Connection to EMMO](figs/emmo-connection.svg)
+![Connection to EMMO](docs/figs/emmo-connection.svg)
 
 _Figure 4: Connection to EMMO._
 
@@ -99,6 +119,11 @@ The provided turtle files
 - [datamodel.ttl](datamodel.ttl) imports [collection.ttl](collection.ttl) and links it to EMMO.
 
 
+Usage example
+-------------
+See [docs/serialisation.md](docs/serialisation.md) for an example of how entities and instances can be serialised with the Datamodel Ontology.
+
+
 References
 ----------
 1. A Practical Approach to Ontology-Based Data Modelling for Semantic Interoperability, https://www.scipedia.com/public/Hagelien_et_al_2021a
@@ -108,7 +133,7 @@ References
 Attributions and credits
 ------------------------
 
-### Contribruting projects
+### Contributing projects
 
 - [MarketPlace](https://www.the-marketplace-project.eu/);
   Grant Agreement No: 760173
@@ -122,12 +147,11 @@ Attributions and credits
   Grant Agreement No: 952903
 
 
-
 ### Contributors and contacts
 
-- Thomas Hagelien (Thomas.F.Hagelien(at)sintef.no)
-- Jesper Friis (jesper.friis(at)sintef.no)
-- Francesca Lønstad Bleken (francesca.l.bleken(at)sintef.no)
+- Jesper Friis, SINTEF
+- Francesca Lønstad Bleken, SINTEF
+- Thomas Hagelien, SINTEF
 
 
 
