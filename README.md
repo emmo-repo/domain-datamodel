@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/371351142.svg)](https://zenodo.org/badge/latestdoi/371351142)
+
+
 Datamodel Ontology
 ==================
 
