@@ -1,16 +1,16 @@
-@prefix : <http://emmo.info/datamodel#> .
+@prefix : <https://w3id.org/emmo/domain/datamodel#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix emmo: <http://emmo.info/emmo#> .
+@prefix emmo: <https://w3id.org/emmo/domain/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://emmo.info/datamodel/collection> .
+@base <https://w3id.org/emmo/domain/datamodel/collection> .
 
-<http://emmo.info/datamodel/collection> rdf:type owl:Ontology ;
-                                         owl:versionIRI <http://emmo.info/datamodel/0.0.2/collection> ;
-                                         owl:imports <http://emmo.info/datamodel/0.0.2/transaction> ;
+<https://w3id.org/emmo/domain/datamodel/collection> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/emmo/domain/datamodel/0.0.3/collection> ;
+                                         owl:imports <https://w3id.org/emmo/domain/datamodel/0.0.3/transaction> ;
                                          dcterms:abstract "An extension of the metamodel adding collections."@en ;
                                          dcterms:creator "Jesper Friis, SINTEF"@en ,
                                                          "Thomas Hagelien, SINTEF"@en ;
@@ -21,7 +21,7 @@
 #    Classes
 #################################################################
 
-###  http://emmo.info/datamodel#Collection
+###  https://w3id.org/emmo/domain/datamodel#Collection
 :Collection rdf:type owl:Class ;
             rdfs:subClassOf :Instance ;
             rdfs:comment """A collection is a special type of instance that contains a set of (references to) other instances and relations between these instances.

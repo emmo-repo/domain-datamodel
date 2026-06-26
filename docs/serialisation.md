@@ -58,9 +58,9 @@ corresponding label to the IRI of the entity.
 Serialised in turtle the Person entity would look like
 
 ```turtle
-@prefix : <http://emmo.info/datamodel/ex1#> .
+@prefix : <https://w3id.org/emmo/domain/datamodel/ex1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dm: <http://emmo.info/datamodel#> .
+@prefix dm: <https://w3id.org/emmo/domain/datamodel#> .
 @prefix person: <http://onto-ns.com/meta/0.1/Person#> .
 
 <http://onto-ns.com/meta/0.1/Person> rdf:type dm:Entity ;
@@ -126,10 +126,10 @@ the individuals A, ..., E refer to the same individuals as in Figure 1.
 Serialised in turtle this instance would be
 
 ```turtle
-@prefix : <http://emmo.info/datamodel/ex1#> .
+@prefix : <https://w3id.org/emmo/domain/datamodel/ex1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dm: <http://emmo.info/datamodel#> .
+@prefix dm: <https://w3id.org/emmo/domain/datamodel#> .
 @prefix person: <http://onto-ns.com/meta/0.1/Person#> .
 
 :person1 rdf:type dm:InstanceData ;
