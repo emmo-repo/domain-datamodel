@@ -12,9 +12,9 @@
                               owl:versionIRI <https://w3id.org/emmo/domain/datamodel/0.0.3> ;
                               owl:imports <https://w3id.org/emmo/domain/datamodel/0.0.3/collection> ,
                                           <https://w3id.org/emmo/1.0.4/disciplines/math> ,
-                                          <https://w3id.org/emmo/1.0.4/multiperspective/persholistic> ,
-                                          <https://w3id.org/emmo/1.0.4/multiperspective/symbolic> ,
-                                          <https://w3id.org/emmo/1.0.4/perspectives/data> ;
+                                          <https://w3id.org/emmo/1.0.4/reference/persholistic> ,
+                                          <https://w3id.org/emmo/1.0.4/reference/symbolic> ,
+                                          <https://w3id.org/emmo/1.0.4/reference/data> ;
                               dcterms:abstract "This module connects the SOFT7 data model and the metamodel described in entity.ttl and metamodel.ttl, respectively, to EMMO."@en ;
                               dcterms:creator "Jesper Friis, SINTEF"@en ,
                                               "Thomas Hagelien, SINTEF"@en ;
@@ -49,7 +49,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 :aggregation rdfs:subPropertyOf emmo:EMMO_8785be5a_2493_4b12_8f39_31907ab11748 .  # emmo:contacts
 
 
-###  https://w3id.org/emmo/domain/datamodel#composition 
+###  https://w3id.org/emmo/domain/datamodel#composition
 :composition rdfs:subPropertyOf emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 . # emmo:overlaps
 
 
