@@ -3,7 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix emmo: <https://w3id.org/emmo/domain/emmo#> .
+@prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms> .
 @base <https://w3id.org/emmo/domain/datamodel> .
@@ -14,7 +14,8 @@
                                           <https://w3id.org/emmo/1.0.4/disciplines/math> ,
                                           <https://w3id.org/emmo/1.0.4/reference/persholistic> ,
                                           <https://w3id.org/emmo/1.0.4/reference/symbolic> ,
-                                          <https://w3id.org/emmo/1.0.4/reference/data> ;
+                                          <https://w3id.org/emmo/1.0.4/reference/data> ,
+                                          <https://w3id.org/emmo/1.0.4/perspectives/reductionistic> ;
                               dcterms:abstract "This module connects the SOFT7 data model and the metamodel described in entity.ttl and metamodel.ttl, respectively, to EMMO."@en ;
                               dcterms:creator "Jesper Friis, SINTEF"@en ,
                                               "Thomas Hagelien, SINTEF"@en ;
