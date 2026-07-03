@@ -164,25 +164,25 @@ It is hence disjoint from Metadata."""@en ;
 
 ###  https://w3id.org/emmo/domain/datamodel#Instance
 :Instance rdf:type owl:Class ;
-          rdfs:subClassOf :DataModel ;
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasDimensionValue ;
-                          #  owl:someValuesFrom :DimensionValue
-                          #] ,
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasPropertyValue ;
-                          #  owl:someValuesFrom :PropertyValue
-                          #] ,
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasMeta ;
-                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          #  owl:onDataRange xsd:anyURI
-                          #] ,
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasUUID ;
-                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          #  owl:onDataRange xsd:string
-                          #] ,
+          rdfs:subClassOf :DataModel ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDimensionValue ;
+                            owl:someValuesFrom :DimensionValue
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPropertyValue ;
+                            owl:someValuesFrom :PropertyValue
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeta ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:anyURI
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasUUID ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
                           #[ rdf:type owl:Restriction ;
                           #  owl:onProperty :hasIdentity ;
                           #  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
