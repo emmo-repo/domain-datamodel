@@ -1,4 +1,4 @@
-ONTOLOGY_NAME: domain-datamodel
+ONTOLOGY_NAME: datamodel
 ONTOLOGY_PREFIX: dm
 ONTOLOGY_IRI: https://w3id.org/emmo/domain/datamodel
 GIT_REPOSITORY: emmo-repo/domain-datamodel
