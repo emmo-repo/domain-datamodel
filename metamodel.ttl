@@ -203,20 +203,20 @@ Instances holds the values of the dimensions and the properties described by the
 
 ###  https://w3id.org/emmo/domain/datamodel#Metadata
 :Metadata rdf:type owl:Class ;
-          rdfs:subClassOf :Instance ;
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasDimension ;
-                          #  owl:someValuesFrom :Dimension
-                          #] ,
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasProperty ;
-                          #  owl:someValuesFrom :Property
-                          #] ,
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasDescription ;
-                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          #  owl:onDataRange xsd:string
-                          #] ,
+          rdfs:subClassOf :Instance ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDimension ;
+                            owl:someValuesFrom :Dimension
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasProperty ;
+                            owl:someValuesFrom :Property
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDescription ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
                           #[ rdf:type owl:Restriction ;
                           #  owl:onProperty :hasIdentity ;
                           #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
