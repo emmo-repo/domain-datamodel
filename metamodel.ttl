@@ -183,11 +183,6 @@ It is hence disjoint from Metadata."""@en ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:string
                           ] ;
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasIdentity ;
-                          #  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          #  owl:onDataRange xsd:anyURI
-                          #] ;
           owl:disjointUnionOf ( :DataInstance
                                 :Metadata
                               ) ;
@@ -217,11 +212,6 @@ Instances holds the values of the dimensions and the properties described by the
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:string
                           ] ;
-                          #[ rdf:type owl:Restriction ;
-                          #  owl:onProperty :hasIdentity ;
-                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          #  owl:onDataRange xsd:anyURI
-                          #] ;
           rdfs:comment "Metadata describing its instances."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Metadata"@en .
 
