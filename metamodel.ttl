@@ -130,6 +130,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/emmo/domain/datamodel#DataInstance
 :DataInstance rdf:type owl:Class ;
+              rdfs:subClassOf :Instance ;
               :instanceOf :Entity ;
               rdfs:comment """An instance representing actual data.
 
