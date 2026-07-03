@@ -11,7 +11,7 @@
 <https://w3id.org/emmo/domain/datamodel> rdf:type owl:Ontology ;
                               owl:versionIRI <https://w3id.org/emmo/domain/datamodel/0.0.3> ;
                               owl:imports <https://w3id.org/emmo/domain/datamodel/0.0.3/collection> ,
-                                          <https://w3id.org/emmo/domain/datamodel/0.0.3/dependencies> .
+                                          <https://w3id.org/emmo/domain/datamodel/0.0.3/dependencies> ;
                               dcterms:abstract "This module connects the SOFT7 data model and the metamodel described in entity.ttl and metamodel.ttl, respectively, to EMMO."@en ;
                               dcterms:creator "Jesper Friis, SINTEF"@en ,
                                               "Thomas Hagelien, SINTEF"@en ;
