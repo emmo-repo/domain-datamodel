@@ -164,30 +164,30 @@ It is hence disjoint from Metadata."""@en ;
 
 ###  https://w3id.org/emmo/domain/datamodel#Instance
 :Instance rdf:type owl:Class ;
-          rdfs:subClassOf :DataModel ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasDimensionValue ;
-                            owl:someValuesFrom :DimensionValue
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasPropertyValue ;
-                            owl:someValuesFrom :PropertyValue
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasMeta ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:anyURI
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasUUID ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:string
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasIdentity ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:anyURI
-                          ] ;
+          rdfs:subClassOf :DataModel ;
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasDimensionValue ;
+                          #  owl:someValuesFrom :DimensionValue
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasPropertyValue ;
+                          #  owl:someValuesFrom :PropertyValue
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasMeta ;
+                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          #  owl:onDataRange xsd:anyURI
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasUUID ;
+                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          #  owl:onDataRange xsd:string
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasIdentity ;
+                          #  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          #  owl:onDataRange xsd:anyURI
+                          #] ;
           owl:disjointUnionOf ( :DataInstance
                                 :Metadata
                               ) ;
@@ -203,24 +203,25 @@ Instances holds the values of the dimensions and the properties described by the
 
 ###  https://w3id.org/emmo/domain/datamodel#Metadata
 :Metadata rdf:type owl:Class ;
-          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasDimension ;
-                            owl:someValuesFrom :Dimension
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasProperty ;
-                            owl:someValuesFrom :Property
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasDescription ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:string
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasIdentity ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:anyURI
-                          ] ;
+          rdfs:subClassOf :Instance ;
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasDimension ;
+                          #  owl:someValuesFrom :Dimension
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasProperty ;
+                          #  owl:someValuesFrom :Property
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasDescription ;
+                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          #  owl:onDataRange xsd:string
+                          #] ,
+                          #[ rdf:type owl:Restriction ;
+                          #  owl:onProperty :hasIdentity ;
+                          #  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          #  owl:onDataRange xsd:anyURI
+                          #] ;
           rdfs:comment "Metadata describing its instances."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Metadata"@en .
 
