@@ -1,0 +1,286 @@
+@prefix : <http://emmo.info/datamodel-inferred> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://emmo.info/datamodel#hasRelation> a owl:DatatypeProperty ;
+    rdfs:comment """In the case that the type of a property refer to an entity, 'hasRelation' can be used to specify the type of relation between the property and the referred entity. 
+
+Typical values are:
+  "dm:composition"
+  "dm:connection"
+  "dm:relation"
+or any of their sub-properties."""@en ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataRelation> ;
+    skos:prefLabel "hasRelation"@en .
+
+<http://emmo.info/datamodel#hasType> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "May change in the future."@en,
+        "Refer to a comment. Normally just a string with a type name, like \"float\". Ideally this should be an object property referring to a type in an ontology."@en ;
+    rdfs:domain <http://emmo.info/datamodel#Property> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataComposition> ;
+    skos:prefLabel "hasType"@en .
+
+<http://emmo.info/datamodel#relation> a owl:ObjectProperty ;
+    rdfs:comment """In UML this is is a subproperty of association that is not an aggregation.
+
+In EMMO this may be interpreted as 'semiotical'."""@en,
+        "Note that this object property is not in the datamodel ontology, but may be used as a value of the 'hasRelation' data property of 'Property'."@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:range <http://emmo.info/datamodel#DataModel> ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    skos:prefLabel "relation"@en .
+
+: a owl:Ontology .
+
+dcterms:abstract a owl:AnnotationProperty .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+skos:altLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+skos:prefLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+<http://emmo.info/datamodel#EMMO_23057c59_2137_40ab_84a4_748933a689df> a owl:ObjectProperty ;
+    rdfs:comment "The shape of a property. May be an empty shape."@en ;
+    rdfs:domain <http://emmo.info/datamodel#Property> ;
+    rdfs:range <http://emmo.info/datamodel#Shape> ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#composition> ;
+    skos:prefLabel "hasShape"@en .
+
+<http://emmo.info/datamodel#aggregation> a owl:ObjectProperty ;
+    rdfs:comment "A connection between two entities."@en,
+        """In UML this is is a subproperty of aggregation that is not a composition.
+
+In EMMO this may be interpreted as 'topological'."""@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:range <http://emmo.info/datamodel#DataModel> ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    skos:prefLabel "connection"@en .
+
+<http://emmo.info/datamodel#dataRelation> a owl:DatatypeProperty ;
+    rdfs:comment "A generic relation between a data attribute and a DataModel subclass that is not a connection or composition."@en,
+        """In UML this is is a subproperty of association that is not an aggregation.
+
+In EMMO this may be interpreted as 'semiotical'."""@en ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "dataRelation"@en .
+
+<http://emmo.info/datamodel#hasFirst> a owl:ObjectProperty ;
+    rdfs:comment "Relates a whole with an ordered set of parts (elements) to its first element."@en ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#composition> ;
+    skos:prefLabel "hasFirst"@en .
+
+<http://emmo.info/datamodel#hasFirstDimensionExpression> a owl:ObjectProperty ;
+    rdfs:comment "The first dimension expression of a shape."@en ;
+    rdfs:domain <http://emmo.info/datamodel#Shape> ;
+    rdfs:range <http://emmo.info/datamodel#DimensionExpression> ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#hasFirst> ;
+    skos:prefLabel "hasFirstDimensionExpression"@en .
+
+<http://emmo.info/datamodel#hasIdentity> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Unique identity of an entity. This will typically be its IRI."@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataComposition> ;
+    skos:altLabel "hasURI"@en ;
+    skos:prefLabel "hasIdentity"@en .
+
+<http://emmo.info/datamodel#hasNext> a owl:ObjectProperty ;
+    rdfs:comment "Relates an element in an ordered list to its next element."@en ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#aggregation> ;
+    skos:prefLabel "hasNext"@en .
+
+<http://emmo.info/datamodel#hasNextDimensionExpression> a owl:AsymmetricProperty,
+        owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Relates a dimension expression to the next dimension expression."@en ;
+    rdfs:domain <http://emmo.info/datamodel#DimensionExpression> ;
+    rdfs:range <http://emmo.info/datamodel#DimensionExpression> ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#hasNext> ;
+    skos:prefLabel "hasNextDimensionExpression"@en .
+
+<http://emmo.info/datamodel#hasProperty> a owl:ObjectProperty ;
+    rdfs:comment "Relates an entity to one of its properties."@en ;
+    rdfs:domain <http://emmo.info/datamodel#Entity> ;
+    rdfs:range <http://emmo.info/datamodel#Property> ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#composition> ;
+    skos:prefLabel "hasProperty"@en .
+
+<http://emmo.info/datamodel#hasUnit> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "May be omitted for dimensionless quantities."@en,
+        "May change in the future."@en,
+        "Refer to a unit. Normally just a string with a conventional unit, like \"m/s\". Ideally this should be an object property referring to a unit in an ontology."@en ;
+    rdfs:domain <http://emmo.info/datamodel#Property> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataComposition> ;
+    skos:prefLabel "hasUnit"@en .
+
+<http://emmo.info/datamodel#hasValue> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment """The actual literal value of a dimension expression or a property of a data object.
+
+The syntax of the actual value is implementation dependent."""@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:range rdf:PlainLiteral ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataComposition> ;
+    skos:prefLabel "hasValue"@en .
+
+<http://emmo.info/datamodel#Entity> a owl:Class ;
+    rdfs:comment "Metadata describing a data object."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/datamodel#hasDimension> ;
+            owl:someValuesFrom <http://emmo.info/datamodel#Dimension> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/datamodel#hasProperty> ;
+            owl:someValuesFrom <http://emmo.info/datamodel#Property> ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasDescription> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:anyURI ;
+            owl:onProperty <http://emmo.info/datamodel#hasIdentity> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        <http://emmo.info/datamodel#DataModel> ;
+    skos:altLabel "Metadata"@en ;
+    skos:prefLabel "Entity"@en .
+
+<http://emmo.info/datamodel#hasDimension> a owl:ObjectProperty ;
+    rdfs:comment "Relates an entity to one of its dimensions."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( <http://emmo.info/datamodel#DimensionExpression> <http://emmo.info/datamodel#Entity> ) ] ;
+    rdfs:range <http://emmo.info/datamodel#Dimension> ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#composition> ;
+    skos:prefLabel "hasDimension"@en .
+
+<http://emmo.info/datamodel#hasLabel> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Range is defined as xsd:string, even though xsd:NCName would have been more precise, but that is not supported by the FaCT++ reasoner."@en,
+        "Refer to a unique and valid C identifier."@en ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataComposition> ;
+    skos:prefLabel "hasLabel"@en .
+
+<http://emmo.info/datamodel#Dimension> a owl:Class ;
+    rdfs:comment "A dimension of an Entity. Dimensions have a label, which i unique within the scope of the Entity and a human description."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasDescription> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasLabel> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        <http://emmo.info/datamodel#DataModel> ;
+    skos:prefLabel "Dimension"@en .
+
+<http://emmo.info/datamodel#Shape> a owl:Class ;
+    rdfs:comment "An element in the list of of dimension in a property."@en,
+        "ShapeElement would have been a better name."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass <http://emmo.info/datamodel#DimensionExpression> ;
+            owl:onProperty <http://emmo.info/datamodel#hasFirstDimensionExpression> ],
+        <http://emmo.info/datamodel#DataModel> ;
+    skos:prefLabel "Shape"@en .
+
+<http://emmo.info/datamodel#hasDescription> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "An human readable description of a class."@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf <http://emmo.info/datamodel#dataComposition> ;
+    skos:prefLabel "hasDescription"@en .
+
+<http://emmo.info/datamodel#composition> a owl:ObjectProperty ;
+    rdfs:comment """In UML this corresponds to UML composition.
+
+In EMMO this is a 'mereological'."""@en,
+        "Relates a part to its whole."@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:range <http://emmo.info/datamodel#DataModel> ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    skos:altLabel "hasPart"@en ;
+    skos:prefLabel "composition"@en .
+
+owl:topObjectProperty a owl:ReflexiveProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    owl:inverseOf owl:topObjectProperty .
+
+<http://emmo.info/datamodel#Property> a owl:Class ;
+    rdfs:comment """A property describes one real data element in the corresponding object (instance) in terms of its
+  - type
+  - shape
+  - unit
+In addition have properties a label (unique within the scope of the entity) and a human description."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasDescription> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass <http://emmo.info/datamodel#Shape> ;
+            owl:onProperty <http://emmo.info/datamodel#EMMO_23057c59_2137_40ab_84a4_748933a689df> ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasUnit> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasLabel> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        <http://emmo.info/datamodel#DataModel> ;
+    skos:prefLabel "Property"@en .
+
+<http://emmo.info/datamodel#DimensionExpression> a owl:Class ;
+    rdfs:comment "A dimension expression is a mathematical expression of dimension labels."@en,
+        """Examples:
+"N"
+"N+1"
+"N+2*M\""""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass <http://emmo.info/datamodel#DimensionExpression> ;
+            owl:onProperty <http://emmo.info/datamodel#hasNextDimensionExpression> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/datamodel#hasDimension> ;
+            owl:someValuesFrom <http://emmo.info/datamodel#Dimension> ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:string ;
+            owl:onProperty <http://emmo.info/datamodel#hasValue> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        <http://emmo.info/datamodel#DataModel> ;
+    skos:prefLabel "DimensionExpression"@en .
+
+<http://emmo.info/datamodel#dataComposition> a owl:DatatypeProperty ;
+    rdfs:comment "Relates a data attribute to the whole (DataModel subclass) that it is a part of."@en ;
+    rdfs:domain <http://emmo.info/datamodel#DataModel> ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "dataComposition"@en .
+
+<http://emmo.info/datamodel#DataModel> a owl:Class ;
+    rdfs:comment "A superclass for all classes in the data model ontology."@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "DataModel"@en .
+

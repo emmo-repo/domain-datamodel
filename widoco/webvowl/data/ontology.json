@@ -1,0 +1,407 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/emmo/domain/datamodel", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/emmo" ],
+    "iri" : "https://w3id.org/emmo/domain/datamodel",
+    "other" : {
+      "termsabstract" : [ {
+        "identifier" : "termsabstract",
+        "language" : "en",
+        "value" : "This module connects the SOFT7 data model and the metamodel described in entity.ttl and metamodel.ttl, respectively, to EMMO.",
+        "type" : "label"
+      } ],
+      "termslicense" : [ {
+        "identifier" : "termslicense",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "type" : "label"
+      } ],
+      "termscreator" : [ {
+        "identifier" : "termscreator",
+        "language" : "en",
+        "value" : "Jesper Friis, SINTEF",
+        "type" : "label"
+      }, {
+        "identifier" : "termscreator",
+        "language" : "en",
+        "value" : "Thomas Hagelien, SINTEF",
+        "type" : "label"
+      } ],
+      "termstitle" : [ {
+        "identifier" : "termstitle",
+        "language" : "en",
+        "value" : "Datamodel ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/emmo#EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/reference/persholistic#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186"
+    },
+    "subClasses" : [ "1", "2" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#Instance",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/collection#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Instance"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#DimensionExpression",
+    "equivalent" : [ "6" ],
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/entity#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DimensionExpression"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/entity#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#Property",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/entity#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/collection#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/collection#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_f9bc8b52_85e9_4b53_b969_dd7724d5b8e4",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/disciplines/math#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_f9bc8b52_85e9_4b53_b969_dd7724d5b8e4"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/reference/symbolic#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#DimensionValue",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/metamodel#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DimensionValue"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#PropertyValue",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/metamodel#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PropertyValue"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#Dimension",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/entity#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dimension"
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#DataModel",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/collection#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataModel"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/collection#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/datamodel#Shape",
+    "baseIri" : "https://w3id.org/emmo/domain/datamodel",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/datamodel/entity#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Shape"
+    },
+    "id" : "8",
+    "superClasses" : [ "7" ]
+  } ],
+  "property" : [ {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "7",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  } ]
+}

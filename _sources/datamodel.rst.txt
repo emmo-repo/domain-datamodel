@@ -1,0 +1,1798 @@
+
+===============
+Reference Index
+===============
+
+
+
+Datamodel
+=========
+
+
+
+.. _datamodel-classes:
+
+Classes
+-------
+
+.. raw:: html
+
+   <div id="BasicMetadataSchema"></div>
+
+
+BasicMetadataSchema
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#BasicMetadataSchema' onclick="if(!document.getElementById('BasicMetadataSchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#BasicMetadataSchema'; return false;}">https://w3id.org/emmo/domain/datamodel#BasicMetadataSchema</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">BasicMetadataSchema</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">instanceOf</span></td>
+    <td class="element-table-value"><a href='#BasicMetadataSchema' onclick="if(!document.getElementById('BasicMetadataSchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#BasicMetadataSchema'; return false;}">BasicMetadataSchema</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">Metadata</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Collection"></div>
+
+
+Collection
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Collection' onclick="if(!document.getElementById('Collection')){window.location.href='https://w3id.org/emmo/domain/datamodel#Collection'; return false;}">https://w3id.org/emmo/domain/datamodel#Collection</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Collection</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DataInstance"></div>
+
+
+DataInstance
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DataInstance' onclick="if(!document.getElementById('DataInstance')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataInstance'; return false;}">https://w3id.org/emmo/domain/datamodel#DataInstance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DataInstance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">instanceOf</span></td>
+    <td class="element-table-value"><a href='#Entity' onclick="if(!document.getElementById('Entity')){window.location.href='https://w3id.org/emmo/domain/datamodel#Entity'; return false;}">Entity</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DataModel"></div>
+
+
+DataModel
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">https://w3id.org/emmo/domain/datamodel#DataModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DataModel</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8'>Language</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Entity' onclick="if(!document.getElementById('Entity')){window.location.href='https://w3id.org/emmo/domain/datamodel#Entity'; return false;}">Entity</a>, <a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a>, <a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a>, <a href='#Dimension' onclick="if(!document.getElementById('Dimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#Dimension'; return false;}">Dimension</a>, <a href='#DimensionValue' onclick="if(!document.getElementById('DimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionValue'; return false;}">DimensionValue</a>, <a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a>, <a href='#PropertyValue' onclick="if(!document.getElementById('PropertyValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#PropertyValue'; return false;}">PropertyValue</a>, <a href='#Shape' onclick="if(!document.getElementById('Shape')){window.location.href='https://w3id.org/emmo/domain/datamodel#Shape'; return false;}">Shape</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Dimension"></div>
+
+
+Dimension
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Dimension' onclick="if(!document.getElementById('Dimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#Dimension'; return false;}">https://w3id.org/emmo/domain/datamodel#Dimension</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Dimension</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186'>Constituent</a>, <a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasDescription' onclick="if(!document.getElementById('hasDescription')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDescription'; return false;}">hasDescription</a> exactly 1 type</li><li><a href='#hasLabel' onclick="if(!document.getElementById('hasLabel')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasLabel'; return false;}">hasLabel</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DimensionExpression"></div>
+
+
+DimensionExpression
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">https://w3id.org/emmo/domain/datamodel#DimensionExpression</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DimensionExpression</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">equivalentTo</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_f9bc8b52_85e9_4b53_b969_dd7724d5b8e4'>Expression</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasDimension' onclick="if(!document.getElementById('hasDimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimension'; return false;}">hasDimension</a> some <a href='#Dimension' onclick="if(!document.getElementById('Dimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#Dimension'; return false;}">Dimension</a></li><li><a href='#hasNextDimensionExpression' onclick="if(!document.getElementById('hasNextDimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasNextDimensionExpression'; return false;}">hasNextDimensionExpression</a> only <a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a></li><li><a href='#hasValue' onclick="if(!document.getElementById('hasValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasValue'; return false;}">hasValue</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DimensionValue"></div>
+
+
+DimensionValue
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DimensionValue' onclick="if(!document.getElementById('DimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionValue'; return false;}">https://w3id.org/emmo/domain/datamodel#DimensionValue</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DimensionValue</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f'>IntegerData</a>, <a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasDimensionSize' onclick="if(!document.getElementById('hasDimensionSize')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimensionSize'; return false;}">hasDimensionSize</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Entity"></div>
+
+
+Entity
+^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Entity' onclick="if(!document.getElementById('Entity')){window.location.href='https://w3id.org/emmo/domain/datamodel#Entity'; return false;}">https://w3id.org/emmo/domain/datamodel#Entity</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Entity</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Metadata</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">instanceOf</span></td>
+    <td class="element-table-value"><a href='#EntitySchema' onclick="if(!document.getElementById('EntitySchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#EntitySchema'; return false;}">EntitySchema</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">Metadata</a>, <a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasDimension' onclick="if(!document.getElementById('hasDimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimension'; return false;}">hasDimension</a> some <a href='#Dimension' onclick="if(!document.getElementById('Dimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#Dimension'; return false;}">Dimension</a></li><li><a href='#hasProperty' onclick="if(!document.getElementById('hasProperty')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasProperty'; return false;}">hasProperty</a> some <a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a></li><li><a href='#hasDescription' onclick="if(!document.getElementById('hasDescription')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDescription'; return false;}">hasDescription</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="EntitySchema"></div>
+
+
+EntitySchema
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#EntitySchema' onclick="if(!document.getElementById('EntitySchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#EntitySchema'; return false;}">https://w3id.org/emmo/domain/datamodel#EntitySchema</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">EntitySchema</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">instanceOf</span></td>
+    <td class="element-table-value"><a href='#BasicMetadataSchema' onclick="if(!document.getElementById('BasicMetadataSchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#BasicMetadataSchema'; return false;}">BasicMetadataSchema</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">Metadata</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Instance"></div>
+
+
+Instance
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">https://w3id.org/emmo/domain/datamodel#Instance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Instance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">DataObject</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">instanceOf</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">Metadata</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2'>Fundamental</a>, <a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">Metadata</a>, <a href='#Transaction' onclick="if(!document.getElementById('Transaction')){window.location.href='https://w3id.org/emmo/domain/datamodel#Transaction'; return false;}">Transaction</a>, <a href='#DataInstance' onclick="if(!document.getElementById('DataInstance')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataInstance'; return false;}">DataInstance</a>, <a href='#Collection' onclick="if(!document.getElementById('Collection')){window.location.href='https://w3id.org/emmo/domain/datamodel#Collection'; return false;}">Collection</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasPropertyValue' onclick="if(!document.getElementById('hasPropertyValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasPropertyValue'; return false;}">hasPropertyValue</a> some <a href='#PropertyValue' onclick="if(!document.getElementById('PropertyValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#PropertyValue'; return false;}">PropertyValue</a></li><li><a href='#hasDimensionValue' onclick="if(!document.getElementById('hasDimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimensionValue'; return false;}">hasDimensionValue</a> some <a href='#DimensionValue' onclick="if(!document.getElementById('DimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionValue'; return false;}">DimensionValue</a></li><li><a href='#hasMeta' onclick="if(!document.getElementById('hasMeta')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasMeta'; return false;}">hasMeta</a> exactly 1 type</li><li><a href='#hasUUID' onclick="if(!document.getElementById('hasUUID')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasUUID'; return false;}">hasUUID</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Metadata"></div>
+
+
+Metadata
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">https://w3id.org/emmo/domain/datamodel#Metadata</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Metadata</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Entity' onclick="if(!document.getElementById('Entity')){window.location.href='https://w3id.org/emmo/domain/datamodel#Entity'; return false;}">Entity</a>, <a href='#EntitySchema' onclick="if(!document.getElementById('EntitySchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#EntitySchema'; return false;}">EntitySchema</a>, <a href='#BasicMetadataSchema' onclick="if(!document.getElementById('BasicMetadataSchema')){window.location.href='https://w3id.org/emmo/domain/datamodel#BasicMetadataSchema'; return false;}">BasicMetadataSchema</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasDimension' onclick="if(!document.getElementById('hasDimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimension'; return false;}">hasDimension</a> some <a href='#Dimension' onclick="if(!document.getElementById('Dimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#Dimension'; return false;}">Dimension</a></li><li><a href='#hasProperty' onclick="if(!document.getElementById('hasProperty')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasProperty'; return false;}">hasProperty</a> some <a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a></li><li><a href='#hasDescription' onclick="if(!document.getElementById('hasDescription')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDescription'; return false;}">hasDescription</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Property"></div>
+
+
+Property
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">https://w3id.org/emmo/domain/datamodel#Property</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Property</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186'>Constituent</a>, <a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasLabel' onclick="if(!document.getElementById('hasLabel')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasLabel'; return false;}">hasLabel</a> exactly 1 type</li><li><a href='#EMMO_23057c59_2137_40ab_84a4_748933a689df' onclick="if(!document.getElementById('EMMO_23057c59_2137_40ab_84a4_748933a689df')){window.location.href='https://w3id.org/emmo/domain/datamodel#EMMO_23057c59_2137_40ab_84a4_748933a689df'; return false;}">hasShape</a> only <a href='#Shape' onclick="if(!document.getElementById('Shape')){window.location.href='https://w3id.org/emmo/domain/datamodel#Shape'; return false;}">Shape</a></li><li><a href='#hasDescription' onclick="if(!document.getElementById('hasDescription')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDescription'; return false;}">hasDescription</a> exactly 1 type</li><li><a href='#hasUnit' onclick="if(!document.getElementById('hasUnit')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasUnit'; return false;}">hasUnit</a> exactly 1 type</li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PropertyValue"></div>
+
+
+PropertyValue
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PropertyValue' onclick="if(!document.getElementById('PropertyValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#PropertyValue'; return false;}">https://w3id.org/emmo/domain/datamodel#PropertyValue</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PropertyValue</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a>, <a href='https://w3id.org/emmo#EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490'>Data</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Shape"></div>
+
+
+Shape
+^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Shape' onclick="if(!document.getElementById('Shape')){window.location.href='https://w3id.org/emmo/domain/datamodel#Shape'; return false;}">https://w3id.org/emmo/domain/datamodel#Shape</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Shape</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652'>Arrangement</a>, <a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasFirstDimensionExpression' onclick="if(!document.getElementById('hasFirstDimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasFirstDimensionExpression'; return false;}">hasFirstDimensionExpression</a> max 1 <a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a></li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Transaction"></div>
+
+
+Transaction
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Transaction' onclick="if(!document.getElementById('Transaction')){window.location.href='https://w3id.org/emmo/domain/datamodel#Transaction'; return false;}">https://w3id.org/emmo/domain/datamodel#Transaction</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Transaction</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='#hasParentHash' onclick="if(!document.getElementById('hasParentHash')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasParentHash'; return false;}">hasParentHash</a> exactly 1 <a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></li><li><a href='#hasParent' onclick="if(!document.getElementById('hasParent')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasParent'; return false;}">hasParent</a> exactly 1 <a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+
+.. _datamodel-object-properties:
+
+Object Properties
+-----------------
+
+.. raw:: html
+
+   <div id="composition"></div>
+
+
+composition
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">https://w3id.org/emmo/domain/datamodel#composition</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">composition</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">hasPart</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='http://www.w3.org/2002/07/owl#topObjectProperty'>topObjectProperty</a>, <a href='https://w3id.org/emmo#EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6'>overlaps</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="aggregation"></div>
+   <div id="connection"></div>
+
+connection
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#aggregation' onclick="if(!document.getElementById('aggregation')){window.location.href='https://w3id.org/emmo/domain/datamodel#aggregation'; return false;}">https://w3id.org/emmo/domain/datamodel#aggregation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">connection</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='http://www.w3.org/2002/07/owl#topObjectProperty'>topObjectProperty</a>, <a href='https://w3id.org/emmo#EMMO_8785be5a_2493_4b12_8f39_31907ab11748'>contacts</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasDimension"></div>
+
+
+hasDimension
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasDimension' onclick="if(!document.getElementById('hasDimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimension'; return false;}">https://w3id.org/emmo/domain/datamodel#hasDimension</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasDimension</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">composition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a> or <a href='#Entity' onclick="if(!document.getElementById('Entity')){window.location.href='https://w3id.org/emmo/domain/datamodel#Entity'; return false;}">Entity</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#Dimension' onclick="if(!document.getElementById('Dimension')){window.location.href='https://w3id.org/emmo/domain/datamodel#Dimension'; return false;}">Dimension</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasDimensionValue"></div>
+
+
+hasDimensionValue
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasDimensionValue' onclick="if(!document.getElementById('hasDimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimensionValue'; return false;}">https://w3id.org/emmo/domain/datamodel#hasDimensionValue</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasDimensionValue</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">composition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#DimensionValue' onclick="if(!document.getElementById('DimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionValue'; return false;}">DimensionValue</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasFirst"></div>
+
+
+hasFirst
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasFirst' onclick="if(!document.getElementById('hasFirst')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasFirst'; return false;}">https://w3id.org/emmo/domain/datamodel#hasFirst</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasFirst</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">composition</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasFirstDimensionExpression"></div>
+
+
+hasFirstDimensionExpression
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasFirstDimensionExpression' onclick="if(!document.getElementById('hasFirstDimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasFirstDimensionExpression'; return false;}">https://w3id.org/emmo/domain/datamodel#hasFirstDimensionExpression</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasFirstDimensionExpression</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#hasFirst' onclick="if(!document.getElementById('hasFirst')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasFirst'; return false;}">hasFirst</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Shape' onclick="if(!document.getElementById('Shape')){window.location.href='https://w3id.org/emmo/domain/datamodel#Shape'; return false;}">Shape</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasNext"></div>
+
+
+hasNext
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasNext' onclick="if(!document.getElementById('hasNext')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasNext'; return false;}">https://w3id.org/emmo/domain/datamodel#hasNext</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasNext</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#aggregation' onclick="if(!document.getElementById('aggregation')){window.location.href='https://w3id.org/emmo/domain/datamodel#aggregation'; return false;}">connection</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasNextDimensionExpression"></div>
+
+
+hasNextDimensionExpression
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasNextDimensionExpression' onclick="if(!document.getElementById('hasNextDimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasNextDimensionExpression'; return false;}">https://w3id.org/emmo/domain/datamodel#hasNextDimensionExpression</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasNextDimensionExpression</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#AsymmetricProperty'>AsymmetricProperty</a>, <a href='http://www.w3.org/2002/07/owl#FunctionalProperty'>FunctionalProperty</a>, <a href='http://www.w3.org/2002/07/owl#InverseFunctionalProperty'>InverseFunctionalProperty</a>, <a href='http://www.w3.org/2002/07/owl#IrreflexiveProperty'>IrreflexiveProperty</a>, <a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#hasNext' onclick="if(!document.getElementById('hasNext')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasNext'; return false;}">hasNext</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#DimensionExpression' onclick="if(!document.getElementById('DimensionExpression')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionExpression'; return false;}">DimensionExpression</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasParent"></div>
+
+
+hasParent
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasParent' onclick="if(!document.getElementById('hasParent')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasParent'; return false;}">https://w3id.org/emmo/domain/datamodel#hasParent</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasParent</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#aggregation' onclick="if(!document.getElementById('aggregation')){window.location.href='https://w3id.org/emmo/domain/datamodel#aggregation'; return false;}">connection</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Transaction' onclick="if(!document.getElementById('Transaction')){window.location.href='https://w3id.org/emmo/domain/datamodel#Transaction'; return false;}">Transaction</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasProperty"></div>
+
+
+hasProperty
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasProperty' onclick="if(!document.getElementById('hasProperty')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasProperty'; return false;}">https://w3id.org/emmo/domain/datamodel#hasProperty</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasProperty</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">composition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Entity' onclick="if(!document.getElementById('Entity')){window.location.href='https://w3id.org/emmo/domain/datamodel#Entity'; return false;}">Entity</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasPropertyValue"></div>
+
+
+hasPropertyValue
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasPropertyValue' onclick="if(!document.getElementById('hasPropertyValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasPropertyValue'; return false;}">https://w3id.org/emmo/domain/datamodel#hasPropertyValue</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasPropertyValue</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">composition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#PropertyValue' onclick="if(!document.getElementById('PropertyValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#PropertyValue'; return false;}">PropertyValue</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="EMMO_23057c59_2137_40ab_84a4_748933a689df"></div>
+   <div id="hasShape"></div>
+
+hasShape
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#EMMO_23057c59_2137_40ab_84a4_748933a689df' onclick="if(!document.getElementById('EMMO_23057c59_2137_40ab_84a4_748933a689df')){window.location.href='https://w3id.org/emmo/domain/datamodel#EMMO_23057c59_2137_40ab_84a4_748933a689df'; return false;}">https://w3id.org/emmo/domain/datamodel#EMMO_23057c59_2137_40ab_84a4_748933a689df</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasShape</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='#composition' onclick="if(!document.getElementById('composition')){window.location.href='https://w3id.org/emmo/domain/datamodel#composition'; return false;}">composition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#Shape' onclick="if(!document.getElementById('Shape')){window.location.href='https://w3id.org/emmo/domain/datamodel#Shape'; return false;}">Shape</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="relation"></div>
+
+
+relation
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#relation' onclick="if(!document.getElementById('relation')){window.location.href='https://w3id.org/emmo/domain/datamodel#relation'; return false;}">https://w3id.org/emmo/domain/datamodel#relation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">relation</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='http://www.w3.org/2002/07/owl#topObjectProperty'>topObjectProperty</a>, <a href='https://w3id.org/emmo#EMMO_2337e25c_3c60_43fc_a8f9_b11a3f974291'>semiotical</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+
+.. _datamodel-data-properties:
+
+Data Properties
+---------------
+
+.. raw:: html
+
+   <div id="dataComposition"></div>
+
+
+dataComposition
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">https://w3id.org/emmo/domain/datamodel#dataComposition</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">dataComposition</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="dataRelation"></div>
+
+
+dataRelation
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#dataRelation' onclick="if(!document.getElementById('dataRelation')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataRelation'; return false;}">https://w3id.org/emmo/domain/datamodel#dataRelation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">dataRelation</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasDescription"></div>
+
+
+hasDescription
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasDescription' onclick="if(!document.getElementById('hasDescription')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDescription'; return false;}">https://w3id.org/emmo/domain/datamodel#hasDescription</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasDescription</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='http://www.w3.org/2002/07/owl#FunctionalProperty'>FunctionalProperty</a>, <a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">dataComposition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#string'>xsd:string</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasDimensionSize"></div>
+
+
+hasDimensionSize
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasDimensionSize' onclick="if(!document.getElementById('hasDimensionSize')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasDimensionSize'; return false;}">https://w3id.org/emmo/domain/datamodel#hasDimensionSize</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasDimensionSize</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DimensionValue' onclick="if(!document.getElementById('DimensionValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#DimensionValue'; return false;}">DimensionValue</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#integer'>xsd:integer</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasHash"></div>
+
+
+hasHash
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasHash' onclick="if(!document.getElementById('hasHash')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasHash'; return false;}">https://w3id.org/emmo/domain/datamodel#hasHash</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasHash</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataRelation' onclick="if(!document.getElementById('dataRelation')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataRelation'; return false;}">dataRelation</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasLabel"></div>
+
+
+hasLabel
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasLabel' onclick="if(!document.getElementById('hasLabel')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasLabel'; return false;}">https://w3id.org/emmo/domain/datamodel#hasLabel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasLabel</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='http://www.w3.org/2002/07/owl#FunctionalProperty'>FunctionalProperty</a>, <a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">dataComposition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#string'>xsd:string</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasMeta"></div>
+
+
+hasMeta
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasMeta' onclick="if(!document.getElementById('hasMeta')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasMeta'; return false;}">https://w3id.org/emmo/domain/datamodel#hasMeta</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasMeta</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">dataComposition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#anyURI'>xsd:anyURI</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasParentHash"></div>
+
+
+hasParentHash
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasParentHash' onclick="if(!document.getElementById('hasParentHash')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasParentHash'; return false;}">https://w3id.org/emmo/domain/datamodel#hasParentHash</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasParentHash</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataRelation' onclick="if(!document.getElementById('dataRelation')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataRelation'; return false;}">dataRelation</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Transaction' onclick="if(!document.getElementById('Transaction')){window.location.href='https://w3id.org/emmo/domain/datamodel#Transaction'; return false;}">Transaction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasRelation"></div>
+
+
+hasRelation
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasRelation' onclick="if(!document.getElementById('hasRelation')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasRelation'; return false;}">https://w3id.org/emmo/domain/datamodel#hasRelation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasRelation</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataRelation' onclick="if(!document.getElementById('dataRelation')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataRelation'; return false;}">dataRelation</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasType"></div>
+
+
+hasType
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasType' onclick="if(!document.getElementById('hasType')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasType'; return false;}">https://w3id.org/emmo/domain/datamodel#hasType</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasType</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">dataComposition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#string'>xsd:string</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasUUID"></div>
+
+
+hasUUID
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasUUID' onclick="if(!document.getElementById('hasUUID')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasUUID'; return false;}">https://w3id.org/emmo/domain/datamodel#hasUUID</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasUUID</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#string'>xsd:string</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasUnit"></div>
+
+
+hasUnit
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasUnit' onclick="if(!document.getElementById('hasUnit')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasUnit'; return false;}">https://w3id.org/emmo/domain/datamodel#hasUnit</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasUnit</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">dataComposition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Property' onclick="if(!document.getElementById('Property')){window.location.href='https://w3id.org/emmo/domain/datamodel#Property'; return false;}">Property</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#string'>xsd:string</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="hasValue"></div>
+
+
+hasValue
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasValue' onclick="if(!document.getElementById('hasValue')){window.location.href='https://w3id.org/emmo/domain/datamodel#hasValue'; return false;}">https://w3id.org/emmo/domain/datamodel#hasValue</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasValue</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a>, <a href='#dataComposition' onclick="if(!document.getElementById('dataComposition')){window.location.href='https://w3id.org/emmo/domain/datamodel#dataComposition'; return false;}">dataComposition</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#DataModel' onclick="if(!document.getElementById('DataModel')){window.location.href='https://w3id.org/emmo/domain/datamodel#DataModel'; return false;}">DataModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral'>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+
+.. _datamodel-annotation-properties:
+
+Annotation Properties
+---------------------
+
+.. raw:: html
+
+   <div id="instanceOf"></div>
+
+
+instanceOf
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#instanceOf' onclick="if(!document.getElementById('instanceOf')){window.location.href='https://w3id.org/emmo/domain/datamodel#instanceOf'; return false;}">https://w3id.org/emmo/domain/datamodel#instanceOf</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">instanceOf</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#AnnotationProperty'>AnnotationProperty</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='#Instance' onclick="if(!document.getElementById('Instance')){window.location.href='https://w3id.org/emmo/domain/datamodel#Instance'; return false;}">Instance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='#Metadata' onclick="if(!document.getElementById('Metadata')){window.location.href='https://w3id.org/emmo/domain/datamodel#Metadata'; return false;}">Metadata</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+

@@ -1,0 +1,13 @@
+<!-- Do not edit! This file is generated with Tripper. -->
+
+Keywords for namespaces:https://w3id.org/emmo/domain/datamodel#
+
+
+
+
+[@id]: https://www.w3.org/TR/json-ld11/#syntax-tokens-and-keywords
+[@type]: https://www.w3.org/TR/json-ld11/#syntax-tokens-and-keywords
+[@context]: https://www.w3.org/TR/json-ld11/#syntax-tokens-and-keywords
+[@base]: https://www.w3.org/TR/json-ld11/#syntax-tokens-and-keywords
+[@vocab]: https://www.w3.org/TR/json-ld11/#syntax-tokens-and-keywords
+[@graph]: https://www.w3.org/TR/json-ld11/#syntax-tokens-and-keywords

@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Datamodel Ontology &#8212; Datamodel Ontology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=066159fd" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
+    <script src="_static/toc-collapsible.js?v=608593b7"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Datamodel Ontology</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="datamodel.html">
+    Reference Index
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-datamodel" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/datamodel" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://emmo-repo.github.io/domain-datamodel/widoco/index-en.html" title="WIDOCO Documentation" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-file-lines fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">WIDOCO Documentation</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="datamodel.html">
+    Reference Index
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-datamodel" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/datamodel" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://emmo-repo.github.io/domain-datamodel/widoco/index-en.html" title="WIDOCO Documentation" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-file-lines fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">WIDOCO Documentation</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+        <div class="sidebar-primary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content">Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#short-description-of-the-data-model-ontology">Short description of the data model ontology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entity">Entity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metamodel">Metamodel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connection-to-emmo">Connection to EMMO</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-provided-turtle-files">The provided turtle files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage-example">Usage example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributions-and-credits">Attributions and credits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-projects">Contributing projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors-and-contacts">Contributors and contacts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+  </nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Datamodel Ontology</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><a class="reference external" href="https://zenodo.org/badge/latestdoi/371351142"><img alt="DOI" src="https://zenodo.org/badge/371351142.svg" /></a></p>
+<section id="datamodel-ontology">
+<h1>Datamodel Ontology<a class="headerlink" href="#datamodel-ontology" title="Link to this heading">#</a></h1>
+<section id="content">
+<h2>Content<a class="headerlink" href="#content" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview"><span class="xref myst">Overview</span></a></p></li>
+<li><p><a class="reference internal" href="#short-description-of-the-data-model-ontology"><span class="xref myst">Short description of the data model ontology</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#entity"><span class="xref myst">Entity</span></a></p></li>
+<li><p><a class="reference internal" href="#relations"><span class="xref myst">Relations</span></a></p></li>
+<li><p><a class="reference internal" href="#metamodel"><span class="xref myst">Metamodel</span></a></p></li>
+<li><p><a class="reference internal" href="#connection-to-emmo"><span class="xref myst">Connection to EMMO</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#the-provided-turtle-files"><span class="xref myst">The provided turtle files</span></a></p></li>
+<li><p><a class="reference internal" href="#usage-example"><span class="xref myst">Usage example</span></a></p></li>
+<li><p><a class="reference internal" href="#references"><span class="xref myst">References</span></a></p></li>
+<li><p><a class="reference internal" href="#attributions-and-credits"><span class="xref myst">Attributions and credits</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#contributing-projects"><span class="xref myst">Contributing projects</span></a></p></li>
+<li><p><a class="reference internal" href="#contributors-and-contacts"><span class="xref myst">Contributors and contacts</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#license"><span class="xref myst">License</span></a></p></li>
+</ul>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>An ontological description of a simple data model aimed to make
+application specific data semantic interoperabel.</p>
+<p>The basic idea is that the data model should stay very close to the
+way the application repesents its data.  At the same time, the data
+model allows easy mapping the elements in the data model (entities,
+dimensions and properties) to a globally shared ontology and thereby
+enable semantic interoperability.</p>
+<p>This ontology only describes the data model.  A set of accompanying
+tools is needed in order to achieve actual interoperability in real
+applications.</p>
+</section>
+<section id="short-description-of-the-data-model-ontology">
+<h2>Short description of the data model ontology<a class="headerlink" href="#short-description-of-the-data-model-ontology" title="Link to this heading">#</a></h2>
+<p>The root concept in the taxonomy of this ontology is called <strong>DataModel</strong>.</p>
+<section id="entity">
+<h3>Entity<a class="headerlink" href="#entity" title="Link to this heading">#</a></h3>
+<p>The <strong>Entity</strong> is the most central concept in this ontology.  It is the class of individuals that represent any self-contained piece of information.
+It id uniquely defined by its IRI. In addition it has the following parts (composition):</p>
+<ul class="simple">
+<li><p><strong>description</strong>: a human description of the entity.</p></li>
+<li><p><strong>dimensions</strong>: zero or more named dimensions, which are referred to by the property shapes (see below).  A dimension has two parts:</p>
+<ul>
+<li><p><strong>label</strong>: a label identifying the dimension within the entity.</p></li>
+<li><p><strong>description</strong>: a human description of this dimension.</p></li>
+</ul>
+</li>
+<li><p><strong>properties</strong>: a set or properties describing the underlying data.  A property has the following paths:</p>
+<ul>
+<li><p><strong>label</strong>: a label identifying the property within the entity.</p></li>
+<li><p><strong>type</strong>: the data type of the property. More specific types, like integer, float, string etc… are subclasses of Type.  Type may also be a reference to another entity.  The actual type values are implementation-specific and are not included in this ontology.  In future releases type may be changed to a class.</p></li>
+<li><p><strong>relation</strong>: In case type refer to another entity, relation specifies how this and the other entity are related.</p></li>
+<li><p><strong>shape</strong>: The shape of the property.  It is a ordered list of DimensionExpressions.  For example <code class="docutils literal notranslate"><span class="pre">[&quot;N&quot;,</span> <span class="pre">&quot;N+1&quot;]</span></code> where “N” is a dimension label.  Actual implementations may leave the shape optional.</p></li>
+<li><p><strong>unit</strong>: the unit of the property.  Would typically refer to other ontologies, like EMMO, QUDT or OM, or simply be a conventional symbol for the unit (e.g. “km/h”).  In future releases unit may be changed to a class.</p></li>
+<li><p><strong>description</strong>: a human description of the property.</p></li>
+</ul>
+</li>
+</ul>
+<p>Figure 1 shows the relations between the entity and its parts.</p>
+<p><img alt="Relations between entity parts" src="_images/entity.svg" /></p>
+<p><em>Figure 1: The relations the Entity parts.  The taxonomy is not shown for clarity.</em></p>
+</section>
+<section id="relations">
+<h3>Relations<a class="headerlink" href="#relations" title="Link to this heading">#</a></h3>
+<p>The datamodel ontology categorises its relations in terms of:</p>
+<ul class="simple">
+<li><p><strong>composition</strong> which describe parthood relations.  It correspond to mereology in EMMO and composition in UML.</p></li>
+<li><p><strong>connection</strong> which describe connections between two concepts.  It correspond to topology in EMMO and the subproperty of UML aggregation that is not a composition.</p></li>
+<li><p><strong>relation</strong> which describe generic relations between concepts that are not connections or compositions.  It correspond to semiotical in EMMO.  In UML it is the subproperty of UML association that is not a aggregation.</p></li>
+</ul>
+<p>As shown in Figure 2 is the same categorisation used for both object and data properties.</p>
+<p><img alt="Relations" src="_images/relations.svg" /></p>
+<p><em>Figure 2: Taxonomy of object properties and data properties.</em></p>
+</section>
+<section id="metamodel">
+<h3>Metamodel<a class="headerlink" href="#metamodel" title="Link to this heading">#</a></h3>
+<p>A metamodel for the metadata hierarchy, which is not part of the basic entity ontology was suggested in SOFT and implemented in <a class="reference external" href="https://github.com/SINTEF">DLite</a>.  It extends the entity ontology with the following concepts:</p>
+<ul class="simple">
+<li><p><strong>Metadata</strong>, which is a generalisation of Entity that is able to describe not only data objects, but also entities and other metadata.</p></li>
+<li><p><strong>DataInstance</strong>, which is an instance on an entity representing actual data.</p></li>
+<li><p><strong>Instance</strong>, which is the class of all metadata instances, i.e. what can be described by a Metadata.  It is the disjoint union of Metadata and DataInstance.</p></li>
+<li><p><strong>EntitySchema</strong> is a metadata that can describe an entity (i.e. a meta-metadata).</p></li>
+<li><p><strong>BasicMetadataSchema</strong> is a metadata that can describe an entity schema.  Furthermore it has the ability to describe itself, terminating the metadata hierarchy.</p></li>
+</ul>
+<p>Since metadata are instances of the meta-metadata that describes them, all metadata are also instances. This is similar to Python, where classes (Metadata) are a special kind (subclasses) of Python objects (Instance).</p>
+<p>The metadata model is shown in Figure 3.  Note that this multi-level of abstractions requires second order logic to describe.  It can therefore not be described formally in OWL description logic, which is based on first order logic.  Instead we introduce the the <code class="docutils literal notranslate"><span class="pre">instanceOf</span></code> relations as an annotation property.  It is ignored by the reasoner, but should be thought of as having the same semantic meaning as <code class="docutils literal notranslate"><span class="pre">rdf:type</span></code> without the constrain that the domain must be an individual.</p>
+<p>OWL2 punning, which is to use the same IRI for both a class and individual, could have been another way to formalise the metadata hierarchy.  However, we would like to avoid that, since punning is not anchored in first order logic.</p>
+<p><img alt="DLite metadata" src="_images/metadata.svg" /></p>
+<p><em>Figure 3: The extended metadata hierarchy.</em></p>
+</section>
+<section id="connection-to-emmo">
+<h3>Connection to EMMO<a class="headerlink" href="#connection-to-emmo" title="Link to this heading">#</a></h3>
+<p>When connecting to EMMO, the datamodel ontology is describing as a formal language.  That entities are self-contained are reflected in making them subclasses of spatially fundamental wholes.  The entity dimension, property, shape and dimension expression parts are therefore constituents.  Since shape has a finite set of (ordered) dimension expression direct parts, it is a state.  This is shown in Figure 4.</p>
+<p>The relations are not shown in Figure 4, but fits very well with EMMO:</p>
+<ul class="simple">
+<li><p>composition -&gt; emmo:hasOverlap (mereological)</p></li>
+<li><p>connection -&gt; emmo:isCausallyConnectedWith (topological)</p></li>
+<li><p>relation -&gt; emmo:semiotical</p></li>
+</ul>
+<p><img alt="Connection to EMMO" src="_images/emmo-connection.svg" /></p>
+<p><em>Figure 4: Connection to EMMO.</em></p>
+</section>
+</section>
+<section id="the-provided-turtle-files">
+<h2>The provided turtle files<a class="headerlink" href="#the-provided-turtle-files" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#entity.ttl"><span class="xref myst">entity.ttl</span></a> defines the basic datamodel as a standalone turtle file.</p></li>
+<li><p><a class="reference internal" href="#metamodel.ttl"><span class="xref myst">metamodel.ttl</span></a> imports <a class="reference internal" href="#entity.ttl"><span class="xref myst">entity.ttl</span></a> and extends it with the metadata model.</p></li>
+<li><p><a class="reference internal" href="#transaction.ttl"><span class="xref myst">transaction.ttl</span></a> imports <a class="reference internal" href="#metamodel.ttl"><span class="xref myst">metamodel.ttl</span></a> and extends it with the concept of transactions.  A transaction is an instance that has an immutable parent instance.  This allows for time series and strict provenance.</p></li>
+<li><p><a class="reference internal" href="#collection.ttl"><span class="xref myst">collection.ttl</span></a> import <a class="reference internal" href="#transaction.ttl"><span class="xref myst">transaction.ttl</span></a> and extends it with the concept of collections.  A collection is a special type of instance that contains references to a set of other instances and relations between them.  Collections make it possible to describe complex data structures and can be seen as a local knowledge base.</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/0dcd40d474642a8fcc42394cd5551971/datamodel.ttl"><span class="xref download myst">datamodel.ttl</span></a> imports <a class="reference internal" href="#collection.ttl"><span class="xref myst">collection.ttl</span></a> and links it to EMMO.</p></li>
+</ul>
+</section>
+<section id="usage-example">
+<h2>Usage example<a class="headerlink" href="#usage-example" title="Link to this heading">#</a></h2>
+<p>See <a class="reference internal" href="docs/serialisation.html"><span class="std std-doc">docs/serialisation.md</span></a> for an example of how entities and instances can be serialised with the Datamodel Ontology.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>A Practical Approach to Ontology-Based Data Modelling for Semantic Interoperability, https://www.scipedia.com/public/Hagelien_et_al_2021a</p></li>
+</ol>
+</section>
+<section id="attributions-and-credits">
+<h2>Attributions and credits<a class="headerlink" href="#attributions-and-credits" title="Link to this heading">#</a></h2>
+<section id="contributing-projects">
+<h3>Contributing projects<a class="headerlink" href="#contributing-projects" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.the-marketplace-project.eu/">MarketPlace</a>;
+Grant Agreement No: 760173
+<img src="https://www.the-marketplace-project.eu/content/dam/iwm/the-marketplace-project/images/MARKETPLACE_LOGO_300dpi.png" width="120"></p></li>
+<li><p><a class="reference external" href="https://ontotrans.eu/project/">OntoTrans</a>;
+Grant Agreement No: 862136
+<img src="https://ontotrans.eu/wp-content/uploads/2020/05/ot_logo_rosa_gro%C3%9F.svg" height="50"></p></li>
+<li><p><a class="reference external" href="https://openmodel.eu/project/">OpenModel</a>;
+Grant Agreement No: 862136</p></li>
+<li><p><a class="reference external" href="https://cordis.europa.eu/project/id/952903">VIPCOAT</a>
+Grant Agreement No: 952903</p></li>
+</ul>
+</section>
+<section id="contributors-and-contacts">
+<h3>Contributors and contacts<a class="headerlink" href="#contributors-and-contacts" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Jesper Friis, SINTEF</p></li>
+<li><p>Francesca Lønstad Bleken, SINTEF</p></li>
+<li><p>Thomas Hagelien, SINTEF</p></li>
+</ul>
+</section>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Link to this heading">#</a></h2>
+<p>The datamodel ontology is released under the <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</a> license (CC BY 4.0).</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div class="sidebar-secondary-item">
+  <div class="sidebar-secondary-item__title">Reference Indices</div>
+  <ul class="bd-sidenav">
+      <li><a href="datamodel.html">Reference Index</a></li>
+  </ul>
+</div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, &lt;AUTHOR&gt;.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
