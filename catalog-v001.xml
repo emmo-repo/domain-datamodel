@@ -8,6 +8,7 @@
     <uri name="https://w3id.org/emmo/domain/datamodel/0.0.3/transaction"                     uri="transaction.ttl"/>
     <uri name="https://w3id.org/emmo/domain/datamodel/0.0.3/metamodel"                       uri="metamodel.ttl"/>
     <uri name="https://w3id.org/emmo/domain/datamodel/0.0.3/entity"                          uri="entity.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/datamodel/0.0.3/dependencies"                    uri="datamodel-dependencies.ttl"/>
 
   </group>
 </catalog>

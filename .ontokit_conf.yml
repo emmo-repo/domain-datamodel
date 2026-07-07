@@ -1,0 +1,27 @@
+ONTOLOGY_NAME: datamodel
+ONTOLOGY_PREFIX: dm
+ONTOLOGY_IRI: https://w3id.org/emmo/domain/datamodel
+GIT_REPOSITORY: emmo-repo/domain-datamodel
+GIT_BASE_URL: github.com
+BUILD_DIR: build
+REFERENCE_SUBSECTIONS: all
+REFERENCE_IMPORTED: 'false'
+REFERENCE_RECURSIVE: 'true'
+REFERENCE_IRI_REGEX: https://w3id.org/emmo/domain/datamodel#
+
+# Optional settings for `ontokit docs` reference indices. 
+# Select subsections for the primary reference index. Default is "all".
+# REFERENCE_SUBSECTIONS: all
+# Example subset:
+# REFERENCE_SUBSECTIONS: classes,annotation_properties,data_properties,object_properties,individuals
+# 
+#
+# Optional: additional reference indices for `ontokit docs`.
+# REFERENCE_INDICES:
+#   - ontology_file: build/other-ontology.ttl
+#     title: Other Ontology Reference
+#     docfile: other-reference.rst
+#     iri_regex: https://example.org/other
+#     imported: false
+#     recursive: false
+#     subsections: all
